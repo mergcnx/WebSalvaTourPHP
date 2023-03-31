@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/contacto.css">
-  <link rel="stylesheet" href="../../css/menu.css">
-  <link rel="stylesheet" href="../../css/font.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/font.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -16,12 +16,12 @@
 </head>
 <header>
   <div class="logo">
-    <a href="#"><img src="../../img/logo.png" alt="Logo"></a>
+    <a href="#"><img src="../img/logo.png" alt="Logo"></a>
   </div>
   <nav>
     <ul>
-      <li><a href="../../index.php">Inicio</a></li>
-      <li><a href="../acercade/acercade.php">Acerca de</a></li>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../pages/acercade.php">Acerca de</a></li>
       <li>
         <a href="#">Destinos</a>
         <ul>
@@ -47,7 +47,7 @@
 
     <div class="contenedor">
       <div class="cont-img">
-        <img src="../../img/logo.png" alt="No disponible">
+        <img src="../img/logo.png" alt="No disponible">
       </div>
       <div class="cont-form">
         <div class="form-floating mb-3 mt-3">

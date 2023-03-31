@@ -3,12 +3,12 @@
 
 <head>
 	<title>Acerca de la empresa de turismo</title>
-	<link rel="stylesheet" type="text/css" href="../../css/acercade.css">
-	<link rel="stylesheet" href="../../css/style.css">
-	<link rel="stylesheet" href="../../css/slider.css">
-	<link rel="stylesheet" href="../../css/menu.css">
-	<link rel="stylesheet" href="../../css/font.css">
-	<link rel="stylesheet" href="../..//index.css">
+	<link rel="stylesheet" type="text/css" href="../css/acercade.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/slider.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -17,12 +17,12 @@
 <body>
 	<header>
 		<div class="logo">
-			<a href="#"><img src="../../img/logo.png" alt="Logo"></a>
+			<a href="#"><img src="../img/logo.png" alt="Logo"></a>
 		</div>
 		<nav>
 			<ul>
-				<li><a href="../../index.php">Inicio</a></li>
-				<li><a href="acercade.php">Acerca de</a></li>
+				<li><a href="../index.php">Inicio</a></li>
+				<li><a href="../pages/acercade.php">Acerca de</a></li>
 				<li>
 					<a href="#">Destinos</a>
 					<ul>
@@ -31,7 +31,7 @@
 						<li><a href="#">Destino 3</a></li>
 					</ul>
 				</li>
-				<li><a href="../contactos/contactos.php">Contacto</a></li>
+				<li><a href="../pages/contactos.php">Contacto</a></li>
 
 				<li><input class="form-control" type="text" id="search" placeholder="Buscar..."></li>
 				<li><a href="#" class="logout">Logout</a></li>
