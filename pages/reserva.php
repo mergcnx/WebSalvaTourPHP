@@ -27,32 +27,39 @@ if (!isset($_SESSION['username'])) {
 </head>
 
 <header>
-    <div class="logo">
-        <a href="#"><img src="../img/logo.png" alt="Logo"></a>
-    </div>
-    <nav>
+  <div class="logo">
+    <a href="#"><img src="../img/logo.png" alt="Logo"></a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="acercade.php">Acerca de</a></li>
+      <li>
+        <a href="#">Destinos</a>
         <ul>
-            <li><a href="../index.php">Inicio</a></li>
-            <li><a href="acercade.php">Acerca de</a></li>
-            <li>
-                <a href="#">Destinos</a>
-                <ul>
-                    <li><a href="#">Destino 1</a></li>
-                    <li><a href="#">Destino 2</a></li>
-                    <li><a href="#">Destino 3</a></li>
-                </ul>
-            </li>
-            <li><a href="contactos.php">Contacto</a></li>
-
-            <li><input class="form-control" type="text" id="search" placeholder="Buscar..."></li>
-            <?php
-            if (isset($_SESSION['username'])) {
-                echo "<li><a href='../logout.php' class='logout'>Logout</a></li>";
-            }
-            /*  Falta terminar de implementar el login*/
-            ?>
+          <li><a href="bosqueImposible.php">Bosque El Imposible</a></li>
+          <li><a href="#">Citalá</a></li>
+          <li><a href="#">Lago de Coatepeque</a></li>
+          <li><a href="#">Laguna de Guija</a></li>
+          <li><a href="#">Playa los Cóbanos</a></li>
+          <li><a href="#">Parque Nacional Montecristo</a></li>
+          <li><a href="#">Ruinas de San Andrés</a></li>
+          <li><a href="#">Volcán Chaparrastique</a></li>
         </ul>
-    </nav>
+      </li>
+      <li><a href="contactos.php">Contacto</a></li>
+
+      <li id="search"><input class="form-control" type="text" placeholder="Buscar..."></li>
+      <?php
+      if (isset($_SESSION['username'])) {
+        echo "<li><a href='https://www.facebook.com'><i class='fas fa-shopping-cart'></i></a></li>";
+        echo "<li><p class='user-log'>" . $_SESSION['username'] . "</p></li>";
+        echo "<li><a href='../logout.php' class='logout'>Logout</a></li>";
+      }
+      /*  Falta terminar de implementar el login*/
+      ?>
+    </ul>
+  </nav>
 </header>
 
 <body>

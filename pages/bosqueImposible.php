@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,17 +30,24 @@
       <li>
         <a href="#">Destinos</a>
         <ul>
-          <li><a href="#">Destino 1</a></li>
-          <li><a href="#">Destino 2</a></li>
-          <li><a href="#">Destino 3</a></li>
+          <li><a href="bosqueImposible.php">Bosque El Imposible</a></li>
+          <li><a href="#">Citalá</a></li>
+          <li><a href="#">Lago de Coatepeque</a></li>
+          <li><a href="#">Laguna de Guija</a></li>
+          <li><a href="#">Playa los Cóbanos</a></li>
+          <li><a href="#">Parque Nacional Montecristo</a></li>
+          <li><a href="#">Ruinas de San Andrés</a></li>
+          <li><a href="#">Volcán Chaparrastique</a></li>
         </ul>
       </li>
       <li><a href="contactos.php">Contacto</a></li>
 
-      <li><input class="form-control" type="text" id="search" placeholder="Buscar..."></li>
+      <li id="search"><input class="form-control" type="text" placeholder="Buscar..."></li>
       <?php
-      if (isset($_SESSION['usermail'])) {
-        echo "<li><a href='logout.php' class='logout'>Logout</a></li>";
+      if (isset($_SESSION['username'])) {
+        echo "<li><a href='https://www.facebook.com'><i class='fas fa-shopping-cart'></i></a></li>";
+        echo "<li><p class='user-log'>" . $_SESSION['username'] . "</p></li>";
+        echo "<li><a href='../logout.php' class='logout'>Logout</a></li>";
       }
       /*  Falta terminar de implementar el login*/
       ?>
@@ -91,7 +102,7 @@
           <input type="radio" name="radio-btn" id="img-2" />
           <li class="slide-container">
             <div class="slide">
-            <img src="../img/bosqueimposible/imp2.jpg" alt="No disponible">
+              <img src="../img/bosqueimposible/imp2.jpg" alt="No disponible">
             </div>
             <div class="nav">
               <label for="img-1" class="prev">&#x2039;</label>
@@ -102,7 +113,7 @@
           <input type="radio" name="radio-btn" id="img-3" />
           <li class="slide-container">
             <div class="slide">
-            <img src="../img/bosqueimposible/imp3.jpg" alt="No disponible">
+              <img src="../img/bosqueimposible/imp3.jpg" alt="No disponible">
             </div>
             <div class="nav">
               <label for="img-2" class="prev">&#x2039;</label>
@@ -113,7 +124,7 @@
           <input type="radio" name="radio-btn" id="img-4" />
           <li class="slide-container">
             <div class="slide">
-            <img src="../img/bosqueimposible/imp4.jpg" alt="No disponible">
+              <img src="../img/bosqueimposible/imp4.jpg" alt="No disponible">
             </div>
             <div class="nav">
               <label for="img-3" class="prev">&#x2039;</label>
@@ -124,7 +135,7 @@
           <input type="radio" name="radio-btn" id="img-5" />
           <li class="slide-container">
             <div class="slide">
-            <img src="../img/bosqueimposible/imp5.jpg" alt="No disponible">
+              <img src="../img/bosqueimposible/imp5.jpg" alt="No disponible">
             </div>
             <div class="nav">
               <label for="img-4" class="prev">&#x2039;</label>
@@ -151,7 +162,7 @@
       <!-- <h3>Diseño Web</h3> -->
 
       <div class="contenedor-imagen-turistica">
-      <img src="../img/bosqueimposible/imp6.jpg" alt="No disponible">
+        <img src="../img/bosqueimposible/imp6.jpg" alt="No disponible">
       </div>
 
       <p>Con sus casi 5,000 hectáreas, El Imposible alberga 500 especies de mariposas, 400 especies de árboles, 279
@@ -163,7 +174,7 @@
       <!-- <h3>Aplicaciones Web</h3> -->
 
       <div class="contenedor-imagen-turistica">
-      <img src="../img/bosqueimposible/imp7.jpg" alt="No disponible">
+        <img src="../img/bosqueimposible/imp7.jpg" alt="No disponible">
       </div>
 
       <p>El Parque Nacional El Imposible, abierto al público desde 1997, ofrece: áreas de acampar, un centro de
@@ -175,7 +186,7 @@
       <!-- <h3>E-commerce</h3> -->
 
       <div class="contenedor-imagen-turistica">
-      <img src="../img/bosqueimposible/imp8.jpg" alt="No disponible">
+        <img src="../img/bosqueimposible/imp8.jpg" alt="No disponible">
       </div>
 
       <p>Si usted desea visitar el Bosque El Imposible, debe obtener permiso de ingreso en las oficinas de la Fundación
