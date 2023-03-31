@@ -1,0 +1,52 @@
+.img-logo {
+    margin-top: 15px 0;
+}
+
+h1 {
+    color:#5cafbd;
+    font-size: 50px!important;
+}
+label{
+    color: #5cafbd;
+}
+
+.btn {
+    height: 50px;
+    font-size: 20px;
+    background: #72993e!important;
+    color: white!important;
+}
+
+.contenedor {
+    max-width:90%;
+    height:600px;
+    display:flex;
+    margin: 20px 0;
+}
+.cont-img {
+    margin: 20px;
+}
+.cont-form {
+    width: 40%;
+    margin: 20px;
+}
+
+.form-floating {
+    margin: 0 10%;
+}
+
+@media (max-width: 1100px){
+    .contenedor {
+        margin: auto;
+        height: 400px;
+        display: block;
+    }
+
+    .cont-img {
+        display: none;
+    }
+    
+    .cont-form {
+        width: 90%;
+    }
+}

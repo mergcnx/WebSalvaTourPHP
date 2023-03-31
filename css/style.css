@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* FOOOTER */
+
+.footer-main {
+  /*padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;*/
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer {
+/*2C4E31*/
+  background-color: #424d2e;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+
+.rows {
+  padding-left: 0;
+  padding-right: 0;
+}
+.rows.primary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 10em;
+}
+
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+
+.column ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.column li:not(:first-child) {
+  margin-top: 0.8em;
+}
+
+.column ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+
+.column ul li a:hover {
+  color: #2a8ded;
+}
+
+.about p {
+  text-align: justify;
+  line-height: 1;
+  margin: 0;
+}
+
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+
+}
+
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  /*586144*/
+ /* padding: 0.1em 1em; */
+  background-color: #3e4a68 ;
+}
+
+.copyright p {
+  margin: 10px;
+  padding: 10px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .rows.primary {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* video */
+
+.secvideo {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+
+.video {
+  width: 50%;
+  height: 350px;
+  float: right;
+  margin-left: 15px;
+}
+
+#txtvideo {
+  color: rgb(99, 98, 98);
+  width: 50%;
+  text-align: justify;
+  margin-top: 2%;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+
+/* Section cards con texto */
+
+.textBox {
+  float: left;
+  font-size: 1.2em;
+  color: rgb(99, 98, 98);
+  margin: 4% 0 0 1%;
+  width: 23.7%;
+  text-align: justify;
+}
+
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  margin-bottom: 2%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .cardb {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.cardb {
+  /*background: #222;*/
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.front img {
+  height: 50%;
+  margin-bottom: 5px;
+}
+
+.back {
+  transform: rotateY( 180deg);
+}
+
+
+p {
+  margin-bottom: 1.8em;
+}
+
+.cardBox:nth-child(1) .cardb .back {
+  background: cornflowerblue;
+}
+ 
+.cardBox:nth-child(2) .cardb .back {
+  background: orange;
+}
+ 
+.cardBox:nth-child(3) .cardb .back {
+  background: yellowgreen;
+}
+ 
+.cardBox:nth-child(4) .cardb .back {
+  background: tomato;
+}
+
+.cardBox:nth-child(2) .cardb {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+ 
+.cardBox:nth-child(3) .cardb {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+ 
+.cardBox:nth-child(4) .cardb {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+
+  .card {
+    height: 285px;
+  }
+
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+    height: 290px;
+  }
+}
