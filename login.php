@@ -14,7 +14,7 @@ if(isset($_POST['submit'])) {
         header('location:reserva.html');
     } else {
         $error[] = "Incorrect password or email";
-        echo $error[0];
+        echo $error[0] + " recargue";
     }
 }
 ?>
