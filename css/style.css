@@ -23,7 +23,7 @@
 
 footer {
 /*2C4E31*/
-  background-color: #424d2e;
+  background-color: #1d2b03;
   color: #a7a7a7;
   font-size: 16px;
 }
@@ -126,28 +126,49 @@ div.social {
 .secvideo {
   width: 100%;
   display: flex;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 
 .video {
-  width: 50%;
+  width: 45%;
   height: 350px;
-  float: right;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 #txtvideo {
   color: rgb(99, 98, 98);
-  width: 50%;
+  width: 52%;
   text-align: justify;
   margin-top: 2%;
+  margin-left: 15px;
   padding: 8px;
   font-size: 1.2em;
 }
 
+@media only screen and (max-width: 768px) {
+  .secvideo {
+    display: block;
+    margin-top: 10%;
+    width: 100%;
+  }
+  
+  .video {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+
+  #txtvideo {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
 
 /* Section cards con texto */
+
+.boxesContainer {
+  display: flex;
+}
 
 .textBox {
   float: left;
@@ -159,7 +180,6 @@ div.social {
 }
 
 .cardBox {
-  float: left;
   font-size: 1.2em;
   margin: 1% 0 0 1%;
   margin-bottom: 2%;
@@ -261,28 +281,21 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
-  
+
+@media only screen and (max-width: 768px) {
+  .boxesContainer {
+    display: block;
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+
+  .textBox {
+    float: none;
+    width: 100%;
+  }
+
   .cardBox {
-    margin-left: 2.8%;
-    margin-top: 3%;
-    width: 46%;
+    width: 100%;
   }
 
-  .card {
-    height: 285px;
-  }
-
-  .cardBox:last-child {
-    margin-bottom: 3%;
-  }
-
-}
-
-
-@media screen and (max-width: 480px) {
-  .cardBox {
-    width: 94.5%;
-    height: 290px;
-  }
 }

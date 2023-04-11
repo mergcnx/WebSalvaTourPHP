@@ -19,44 +19,50 @@ session_start();
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <title>Inicio - SalvaTour</title>
 </head>
-<header>
-  <div class="logo">
-    <a href="#"><img src="img/logo.png" alt="Logo"></a>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.php">Inicio</a></li>
-      <li><a href="pages/acercade.php">Acerca de</a></li>
-      <li>
-        <a href="#">Destinos</a>
-        <ul>
-          <li><a href="pages/bosqueImposible.php">Bosque El Imposible</a></li>
-          <li><a href="#">Citalá</a></li>
-          <li><a href="#">Lago de Coatepeque</a></li>
-          <li><a href="#">Laguna de Guija</a></li>
-          <li><a href="#">Playa los Cóbanos</a></li>
-          <li><a href="#">Parque Nacional Montecristo</a></li>
-          <li><a href="#">Ruinas de San Andrés</a></li>
-          <li><a href="#">Volcán Chaparrastique</a></li>
-        </ul>
-      </li>
-      <li><a href="pages/contactos.php">Contacto</a></li>
 
-      <li id="search"><input class="form-control" type="text" placeholder="Buscar..."></li>
-      <?php
-      if (isset($_SESSION['username'])) {
-        echo "<li><a href='https://www.facebook.com'><i class='fas fa-shopping-cart'></i></a></li>";
-        echo "<li><p class='user-log'>".$_SESSION['username']."</p></li>";
-        echo "<li><a href='logout.php' class='logout'>Logout</a></li>";
-      }
-      /*  Falta terminar de implementar el login*/
-      ?>
-    </ul>
-  </nav>
-</header>
 
 <body>
+  <header>
+      <div class="logo">
+        <a href="#"><img src="img/logo.png" alt="Logo"></a>
+      </div>
 
+      <div class="control-menu">
+        <a href="#navigation" class="open"><span class="fas fa-bars"></span></a>
+        <a href="#" class="close"><span class="fas fa-rectangle-xmark"></span></a>
+      </div>
+
+      <nav id="navigation">
+        <ul class="nav-items">
+          <li><a href="index.php">Inicio</a></li>
+          <li><a href="pages/acercade.php">Acerca de</a></li>
+          <li>
+            <a href="#">Destinos</a>
+            <ul>
+              <li><a href="pages/bosqueImposible.php">Bosque El Imposible</a></li>
+              <li><a href="#">Citalá</a></li>
+              <li><a href="#">Lago de Coatepeque</a></li>
+              <li><a href="#">Laguna de Guija</a></li>
+              <li><a href="#">Playa los Cóbanos</a></li>
+              <li><a href="#">Parque Nacional Montecristo</a></li>
+              <li><a href="#">Ruinas de San Andrés</a></li>
+              <li><a href="#">Volcán Chaparrastique</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/contactos.php">Contacto</a></li>
+
+          <li id="search"><input class="form-control" type="text" placeholder="Buscar..."></li>
+          <?php
+          if (isset($_SESSION['username'])) {
+            echo "<li><a href='#'><i class='fas fa-shopping-cart'></i></a></li>";
+            echo "<li><p class='user-log'><span class='fas fa-user'></span> " . $_SESSION['username'] . "</p></li>";
+            echo "<li><a href='logout.php' class='logout'>Logout  <span class='fas fa-right-from-bracket'></span></a></li>";
+          }
+          /*  Falta terminar de implementar el login*/
+          ?>
+        </ul>
+      </nav>
+  </header>
 
   <!--SECCION SLIDER-->
   <div class="slider-frame">
@@ -159,6 +165,7 @@ session_start();
   <!-- SECCIÓN VIDEO -->
 
   <section class="secvideo">
+    <iframe src="https://www.youtube.com/embed/PdNPuDR0gME?autoplay=1&mute=1&loop=1" class="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <p id="txtvideo">El Salvador es una pequeña nación de América Central. Es conocida por sus playas en el océano
       Pacífico, los sitios de surf y el paisaje montañoso. Su Ruta de las Flores es un camino serpenteante que pasa por
       plantaciones de café, bosques tropicales con cascadas y ciudades como Juayúa, con sus festivales gastronómicos
@@ -169,11 +176,6 @@ session_start();
       mágico escenario donde convergen las aguas del Océano Pacífico, el lago de Ilopango, el cerro de las Pavas y el
       Volcán de San Vicente.
     </p>
-
-
-
-    <iframe src="https://www.youtube.com/embed/PdNPuDR0gME?autoplay=1&mute=1&loop=1" class="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
     <!-- <video src="https://www.youtube.com/embed/PdNPuDR0gME" width="640" height="480"></video> -->
   </section>
 

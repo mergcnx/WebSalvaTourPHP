@@ -2,10 +2,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #424d2e;
+  background-color: #1d2b03;
   height: 20%;
   padding: 0 20px;
 }
+
+.control-menu {
+ display: none;
+}
+
+/* .close {
+  display: none;
+} */
 
 .logo img {
   height: 100px;
@@ -94,27 +102,64 @@ nav ul ul li a:hover {
   /* margin-left: 20px; */
   margin-right: 20px;
 }
+@media only screen and (max-width: 768px) {
 
-@media (max-width: 576px){
-  .header {
+ header{
     display: block;
-    height: 100%;
-    align-items: center;
-    background-color: #424d2e;
-    padding: 0 20px;
-    text-align: left;
   }
 
-  nav ul li {
-    display: block;
-    
+  .control-menu {
+    display: flex;
+    justify-content: space-between;
   }
 
-  .logout {
-    margin: 2px;
+  .control-menu span {
+    color: white;
+    font-size: 25px;
+    margin: 5px;
   }
-
-  #search, .logo {
+  
+  .logo, #search {
     display: none;
   }
+
+  ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul.nav-items {
+    height: 0;
+    overflow: hidden;
+  }
+
+  #navigation:target .nav-items {
+    height: 100%;
+  }
+
+  #navigation:target .open {
+    display: none !important;
+  }
+
+  #navigation:target .close {
+    display: block !important;
+  }
+
+  #navigation:target .nav-items {
+    height: 100%;
+    transition: height 0.4s ease-in-out 0s;
+  }
+
+  ul.nav-items {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out 0s;
+  } 
+
+  nav ul ul {
+    position: relative;
+  }
+
 }
+
