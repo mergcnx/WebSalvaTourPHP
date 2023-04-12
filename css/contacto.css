@@ -19,9 +19,9 @@ label{
 
 .contenedor {
     max-width:90%;
-    height:600px;
+    /* height:600px; */
     display:flex;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 .cont-img {
     margin: 20px;

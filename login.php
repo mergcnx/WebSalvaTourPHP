@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 
     if (mysqli_num_rows($result) > 0) {
         $_SESSION['username'] = $username;
-        header('location:pages/reserva.php');
+        header('location:reserva.php');
     } else {
         $error[] = "Incorrect password or username";
         echo $error[0];
