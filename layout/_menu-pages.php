@@ -1,17 +1,17 @@
 <head>
   <link rel="stylesheet" href="../css/plantilla.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/slider.css">
-  <link rel="stylesheet" href="../css/menu.css">
+  <!-- <link rel="stylesheet" href="../css/style.css"> -->
+  <!-- <link rel="stylesheet" href="../css/slider.css"> -->
+  <link rel="stylesheet" href="../css/menu-pl.css">
   <link rel="stylesheet" href="../css/font.css">
-  <link rel="stylesheet" href="../css/index.css">
+  <!-- <link rel="stylesheet" href="../css/index.css"> -->
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 </head>
 
-<header>
+<header class="header-menu">
   <div class="logo">
     <a href="#"><img src="../img/logo.png" alt="Logo"></a>
   </div>

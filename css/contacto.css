@@ -10,7 +10,7 @@ label{
     color: #5cafbd;
 }
 
-.btn {
+.form-floating .btn {
     height: 50px;
     font-size: 20px;
     background: #72993e!important;

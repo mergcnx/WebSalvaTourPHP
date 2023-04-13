@@ -1,13 +1,18 @@
-img{
+#header {
+    height: 60px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card img{
     max-width: 100%;
     height: 180px!important;
     background: lightblue;
     background: radial-gradient(white 30%, lightblue 70%);
 }
 
-.card {
-    margin-top: 20px;
-}
 
 .fa-star,
 .fa-star-half{

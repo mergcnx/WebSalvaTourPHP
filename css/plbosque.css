@@ -1,0 +1,382 @@
+/*=========================================================== BANNER ===================================================================*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-plantilla {
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 65px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.banner .boton-pl, .btnR .boton {
+    display: inline-block;
+    margin-top: 150px;
+    padding: 18px 80px;
+    background-color: #788a07;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .boton-pl:hover {
+    background-color: #ffc000;
+}
+
+
+
+/*========================================================== FIN BANNER ================================================================*/
+
+/*========================================================== Main ======================================================================*/
+.contenedor-pri{
+    margin: 1cm;
+}
+/*======================================================================================================================================*/
+
+/*========================================================== Parte de Section ==========================================================*/
+.title{
+    color: #788a07;
+    font-size: 2cm;
+    text-align: center;
+}
+
+.text-intro{
+    font-size: 1cm;
+    text-align: justify;
+}
+
+.conteiner-A{
+    margin-bottom: 2cm;
+}
+/*========================================================= FIN SECTION =================================================================*/
+
+/*========================================================= PARTE ARTICLE ================================================================*/
+.subtitle{
+    font-size: 1cm;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cont-art{
+    display: flex;
+}
+
+.parr2{
+    display: flex;
+}
+
+.text-info-pl{
+    font-size: 17px;
+    margin: 15px;
+    text-align: justify;
+}
+
+.imge img{
+    border-radius: 15px;
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+.cont-mapa iframe{
+    height: 100%;
+    border-radius: 15px;
+}
+/*========================================================= FIN ARTICLE ==================================================================*/
+
+/*========================================================= SECTION Testimonio ===============================================================*/
+.conteiner-B{
+    background-color: black;
+    height: 125vh;
+    margin: 0;
+    padding-top: 55px;
+}
+.cont-r-p{
+    display: flex;
+}
+
+.title-r{
+    color: white;
+    font-size: 20px;
+    margin-left: 90px;
+    text-align: center;
+}
+
+/* .cont-r{
+    position: relative;
+    display: inline-block;
+    top: 150px;
+    margin: 90px;
+}
+
+.cont-r img{
+    border-radius: 15px;
+    width: 700px;
+}
+
+.text-r{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    font-size: 35px;
+    color: #fff;
+} */
+
+.testi{
+    display: flex;
+}
+
+.img-t img{
+    width:200px;
+    border-radius: 100px;
+    justify-content: center;
+}
+.img-t{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin: 90px;
+    border-radius: 15px;
+    top: -100px;
+}
+/*========================================================= FIN SECTION Testimonio ===========================================================*/
+
+/*========================================================= SECTION RESERVAR ==============================================================*/
+.title-pr h1{
+    font-size: 35px;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+
+  nav ul li a {
+    font-size: 22px;
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    background: #788a07;
+    border-radius: 2px;
+    color: white;
+  }
+
+  nav ul li:hover>ul {
+    display: block;
+    background: #6c7f4a;
+    width: 150px;
+  }
+  .cont-pre{
+    display: flex;
+  }
+
+  .menu-pl{
+    position: relative;
+    left: 6%;
+    top: 15px;
+  }
+
+  .btnR{
+    position: relative;
+    left: 55%;
+    top: -140px;
+  }
+
+  .cont-pre-1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .col{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  .container{
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+  }
+
+  .front,
+.back{
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+  border-radius: 10px;
+  background-position: center;
+  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  height: auto;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.back{
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg,  #cedce7 0%,#788a07 100%);
+    background: -o-linear-gradient(45deg,  #cedce7 0%,#788a07 100%);
+    background: linear-gradient(45deg,  #cedce7 0%,#788a07 100%);
+  }
+
+  .front:after{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .back{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.front .inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+@media screen and (max-width: 64rem){
+    .col{
+      width: calc(33.333333% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 48rem){
+    .col{
+      width: calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 32rem){
+    .col{
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+  }
+/*========================================================= FIN SECTION RESERVAR ==========================================================*/

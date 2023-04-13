@@ -1,0 +1,165 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d2b03;
+  height: 20%;
+  padding: 0 20px;
+}
+
+.control-menu {
+ display: none;
+}
+
+/* .close {
+  display: none;
+} */
+
+.logo img {
+  height: 100px;
+}
+
+.header-menu nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu nav ul li {
+  display: inline-block;
+  position: relative;
+  }
+
+.header-menu nav ul li a {
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.header-menu nav ul li a:hover {
+  background: #6c7f4a;
+  border-radius: 2px;
+  color: white;
+}
+
+.header-menu nav ul li:hover>ul {
+  display: block;
+  background: #6c7f4a;
+  width: 350px;
+}
+
+.header-menu nav ul ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid #ccc; */
+  border: none;
+}
+
+.header-menu nav ul ul li {
+  display: block;
+}
+
+.header-menu nav ul ul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header-menu nav ul ul li a:hover {
+  background-color: #565151;
+}
+
+#search {
+  margin-right: 40px;
+}
+
+
+.fa-shopping-cart{
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+  /* margin-left: 30px; */
+}
+
+.user-log {
+  color:#fff;
+  font-size: 1.4rem;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.logout {
+  /* margin-left: 20px; */
+  margin-right: 20px;
+}
+@media only screen and (max-width: 768px) {
+
+ header{
+    display: block;
+  }
+
+  .control-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .control-menu span {
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+  }
+  
+  .logo, #search {
+    display: none;
+  }
+
+  ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul.nav-items {
+    height: 0;
+    overflow: hidden;
+  }
+
+  #navigation:target .nav-items {
+    height: 100%;
+  }
+
+  #navigation:target .open {
+    display: none !important;
+  }
+
+  #navigation:target .close {
+    display: block !important;
+  }
+
+  #navigation:target .nav-items {
+    height: 100%;
+    transition: height 0.4s ease-in-out 0s;
+  }
+
+  ul.nav-items {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out 0s;
+  } 
+
+  .header-menu nav ul ul {
+    position: relative;
+  }
+
+}
+

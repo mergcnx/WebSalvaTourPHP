@@ -1,5 +1,5 @@
 
-<header id="header">
+<section id="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="index.php" class="navbar-brand">
             <h3 class="px-5">
@@ -39,7 +39,7 @@
         </div>
 
     </nav>
-</header>
+</section>
 
 
 
