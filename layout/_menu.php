@@ -30,7 +30,7 @@
           <li><a href="pages/bosqueImposible.php">Bosque El Imposible</a></li>
           <li><a href="#">Citalá</a></li>
           <li><a href="#">Lago de Coatepeque</a></li>
-          <li><a href="#">Laguna de Guija</a></li>
+          <li><a href="#">Lago de Sushitlán</a></li>
           <li><a href="#">Playa los Cóbanos</a></li>
           <li><a href="#">Parque Nacional Montecristo</a></li>
           <li><a href="#">Ruinas de San Andrés</a></li>
@@ -42,7 +42,7 @@
       <li id="search"><input class="form-control" type="text" placeholder="Buscar..."></li>
       <?php
       if (isset($_SESSION['username'])) {
-        echo "<li><a href='#'><i class='fas fa-shopping-cart'></i></a></li>";
+        echo "<li><a href='carrito.php'><i class='fas fa-shopping-cart'></i></a></li>";
         echo "<li><p class='user-log'><span class='fas fa-user'></span> " . $_SESSION['username'] . "</p></li>";
         echo "<li><a href='logout.php' class='logout'>Logout  <span class='fas fa-right-from-bracket'></span></a></li>";
       }

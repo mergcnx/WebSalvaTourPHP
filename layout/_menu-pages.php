@@ -31,7 +31,7 @@
           <li><a href="bosqueImposible.php">Bosque El Imposible</a></li>
           <li><a href="#">Citalá</a></li>
           <li><a href="#">Lago de Coatepeque</a></li>
-          <li><a href="#">Laguna de Guija</a></li>
+          <li><a href="#">Lago de Sushitlán</a></li>
           <li><a href="#">Playa los Cóbanos</a></li>
           <li><a href="#">Parque Nacional Montecristo</a></li>
           <li><a href="#">Ruinas de San Andrés</a></li>

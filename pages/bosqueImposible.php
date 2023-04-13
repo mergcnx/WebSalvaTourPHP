@@ -173,7 +173,7 @@ session_start();
     </div>
   </div>
 
-  <a href="../reserva.php" class="btn btn-block btn-primary">Reservar</a>
+  <a href="../carrito.php" class="btn btn-block btn-primary">Reservar</a>
 
 
   <?php include '../layout/_footer.php'; ?>

@@ -1,6 +1,7 @@
 <?php
 @include 'config.php';
 session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -26,36 +27,38 @@ session_start();
       <h1>Formulario de contacto</h1>
     </div>
 
-    <div class="contenedor">
-      <div class="cont-img">
-        <img src="img/logo.png" alt="No disponible">
+    <form action="" method="post">
+      <div class="contenedor">
+        <div class="cont-img">
+          <img src="img/logo.png" alt="No disponible">
+        </div>
+        <div class="cont-form">
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" name="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" style="margin-left: 10px;">Nombre</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" name="lastname" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword" style="margin-left: 10px;">Apellido</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" name="email" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword" style="margin-left: 10px;">Correo</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <textarea class="form-control" name="mensaje" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+            <label for="floatingPassword" style="margin-left: 10px;">Escribe un mensaje</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <button class="btn btn-block w-100">Enviar</button>
+          </div>
+        </div>
       </div>
-      <div class="cont-form">
-        <div class="form-floating mb-3 mt-3">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput" style="margin-left: 10px;">Nombre</label>
-        </div>
-
-        <div class="form-floating mb-3">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword" style="margin-left: 10px;">Apellido</label>
-        </div>
-
-        <div class="form-floating mb-3">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword" style="margin-left: 10px;">Correo</label>
-        </div>
-
-        <div class="form-floating mb-3">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
-          <label for="floatingPassword" style="margin-left: 10px;">Escribe un mensaje</label>
-        </div>
-
-        <div class="form-floating mb-3">
-          <button class="btn btn-block w-100">Enviar</button>
-        </div>
-      </div>
-    </div>
+    </form>
 
   </div>
 

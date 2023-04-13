@@ -1,0 +1,4 @@
+LINUX MINT
+
+USER: mario 
+PASS: mario

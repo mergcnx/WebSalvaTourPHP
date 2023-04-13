@@ -1,105 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    background: #424d2e;
+    background-color: lightgreen;
+}
+
+header {
+    background-color: #1d2b03;
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
 h1 {
-    width: 100%;
-    font-size: 50px;
-    color: white;
+    letter-spacing: 1.5vw;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 800;
     text-align: center;
-    margin-top: 5%;
+    padding-top: 15px;
 }
 
-.contenedor {
-    width: 100%;
-    height: 100%;
-    display:flex;
-    margin-top: 5%;
-}
-
-.inicio-sesion {
-    width:30%;
-    height:500px;
-    border-radius:20px;
-    background: white;
-    opacity: 0.9;
-    display:flex;
-    justify-content: center;
-    margin-left:15%;
-    position:absolute;
-    z-index: 3;
-}
-
-.inicio-sesion:hover {
-    opacity: 1;
-}
-
-.inicio-sesion h2 {
-    font-size: 35px;
-    margin-top: 2.5em;
-    margin-bottom: 1em;
-    color:#3a5cca;
-}
-
-input.nom {
-    width:100%;
-    height:40px;
-    border-radius:5px;
-    border:none;
-    background:#d8d0d0;
-}
-
-.btn-sub {
-    width:100%;
-    height:30px;
-    border:none;
-    background:#3a5cca;
-    color:white;
-}
-
-.btn-sub:hover {
-    cursor:pointer;
-    background:#132f88;
-}
-
-.registrar {
-    background:#5d9bda;
-    opacity: 0.9;
-    width:60%;
-    height:400px;
-    margin-left:14%;
-    position:absolute;
-    z-index: 2;
-    margin-top:50px;
-}
-
-.registrar:hover{
-    opacity: 1;
-}
-
-.registrar .reg-title, .reg-text, .reg-btn {
-    color:white;
-    margin-left:60%;
-}
-
-.reg-title {
-    margin-top:100px;
-}
-
-.reg-btn {
-    background:rgb(130, 135, 138);
-    border: 1px solid white;    
-    width:20%;
-    height:30px;
+h3 {
+    letter-spacing: 1vw;
+    font-size: 1.5em;
+    text-align: center;
     
 }
 
-.reg-btn:hover {
-    background: #3a5cca;
-    color:white;
-    border: none;
-    border-radius: 2px;
-    cursor:pointer;
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: 100%;
+    background: url(../img/fondo-login.png) no-repeat center center;
+    background-size: cover;
+}
+
+.form_class {
+    width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: white;
+    font-family: 'system-ui';
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.form_div {
+    text-transform: uppercase;
+}
+
+.form_div>label {
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+
+.info_div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info_div {
+    letter-spacing: 1px;
+}
+
+.field_class {
+    width: 100%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 0px;
+    text-indent: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'system-ui';
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.submit_class {
+    border-style: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #1d2b03;
+    color: whitesmoke;
+    padding: 8px 20px;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.form_div a {
+    cursor: pointer;
+    text-decoration: none;
 }

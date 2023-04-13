@@ -1,3 +1,3 @@
 <?php
-    $conn = mysqli_connect('localhost','root','','salvatour')
+    $conn = mysqli_connect('localhost','root','','salvatourdb')
 ?>
