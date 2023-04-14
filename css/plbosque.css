@@ -24,6 +24,7 @@ body {
     font-size: 5em;
     font-weight: 900;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .banner p {

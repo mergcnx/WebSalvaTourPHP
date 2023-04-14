@@ -43,14 +43,15 @@ if (isset($_POST['remove'])) {
 <body class="bg-light">
 
     <?php
+    require_once 'layout/_menu.php';
     require_once 'php/header.php';
     ?>
 
     <div class="container-fluid">
-        <div class="row px-5">
+        <div class="row px-5 mt-4">
             <div class="col-md-7">
                 <div class="shopping-cart">
-                    <h6>My Cart</h6>
+                    <h2>My Cart</h2>
                     <hr>
 
                     <?php
@@ -80,7 +81,7 @@ if (isset($_POST['remove'])) {
             <div class="col-md-4 offset-md-1 border rounded mt-5 bg-white h-25">
 
                 <div class="pt-4">
-                    <h6>PRICE DETAILS</h6>
+                    <h2>PRICE DETAILS</h2>
                     <hr>
                     <div class="row price-details">
                         <div class="col-md-6">
@@ -111,7 +112,9 @@ if (isset($_POST['remove'])) {
         </div>
     </div>
 
-
+    <div style="position:relative;bottom: 0; margin-top: 20px;">
+        <?php require_once 'layout/_footer.php'; ?>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

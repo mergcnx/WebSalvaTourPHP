@@ -22,6 +22,7 @@ body {
 .banner h1 {
     font-size: 65px;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .banner p {
@@ -33,22 +34,22 @@ body {
     display: inline-block;
     margin-top: 150px;
     padding: 18px 80px;
-    background-color: #00bfff;
-    color: #ffffff;
+    background-color: #0152b0;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
+    font-size: 1.5em;
     transition: background-color 0.3s ease;
 }
 
 .banner .boton-pl:hover, .btnR .boton:hover {
-    background-color: #078a78;
-    border: #b3b3b3 solid;
-    opacity: 65%;
+  background-color: #00bfff;
+    /* border: #b3b3b3 solid; */
 }
 
 .btnR .boton {
-    background-color: #00bfff;
+    background-color: #0152b0;
     margin-top: 100px;
     color: #ffffff;
     text-decoration: none;
@@ -181,6 +182,7 @@ box-shadow: 5px 5px 30px 7px rgba(255, 254, 254, 0.25), -5px -5px 30px 7px rgba(
 
 .title-white {
   color: white;
+  text-transform: uppercase;
 }
 
 .marg{
@@ -221,9 +223,10 @@ nav ul li {
 
   .cont-pre{
     display: flex;
+    height: 150px;
   }
 
-  .menu{
+  .menu-pl{
     position: relative;
     left: 6%;
     top: 15px;
@@ -390,12 +393,19 @@ nav ul li {
   }
 
 @media only screen and (max-width: 768px) {
+
+  .banner p {
+    background: white;
+    opacity: 0.70;
+  }
+
   .title {
     font-size: 3em;
     margin-bottom: 40px;
   }
   .text-intro {
     font-size: 1.5em;
+    
   }
   
   .subtitle {
@@ -465,24 +475,3 @@ nav ul li {
 }
 
 
-
-/*=======================================================*/
-@media screen and (max-width: 64rem){
-    .col{
-      width: calc(33.333333% - 2rem);
-    }
-  }
-  
-  @media screen and (max-width: 48rem){
-    .col{
-      width: calc(50% - 2rem);
-    }
-  }
-  
-  @media screen and (max-width: 32rem){
-    .col{
-      width: 100%;
-      margin: 0 0 2rem 0;
-    }
-  }
-/*========================================================= FIN SECTION RESERVAR ==========================================================*/

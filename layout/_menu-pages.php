@@ -30,7 +30,7 @@
         <ul>
           <li><a href="bosqueImposible.php">Bosque El Imposible</a></li>
           <li><a href="#">Citalá</a></li>
-          <li><a href="#">Lago de Coatepeque</a></li>
+          <li><a href="coatepeque.php">Lago de Coatepeque</a></li>
           <li><a href="#">Lago de Sushitlán</a></li>
           <li><a href="playacobano.php">Playa los Cóbanos</a></li>
           <li><a href="montecristo.php">Parque Nacional Montecristo</a></li>
