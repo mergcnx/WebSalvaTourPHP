@@ -102,6 +102,13 @@ nav ul ul li a:hover {
   /* margin-left: 20px; */
   margin-right: 20px;
 }
+
+.logout:hover {
+  font-size: 1.5em;
+  background: #fff;
+  color: #1d2b03;
+}
+
 @media only screen and (max-width: 768px) {
 
  header{
