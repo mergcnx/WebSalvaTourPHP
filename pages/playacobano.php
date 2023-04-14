@@ -14,13 +14,13 @@ session_start();
 </head>
 <body>
 <?php include '../layout/_menu-pages.php'; ?>
-    <section class="playalago" style="background-image: url(../img/playaloscobanos/placob_b.jpg)">
+    <section class="playalago" style="background-image: url(../img/playaloscobanos/placob_11.jpg)">
         <div class="banner">
             <h1>PLAYA LOS COBANOS</h1>
             <br>
             <br>
             <p>La Playa los Cóbanos es una de las más bonitas de El Salvador, con su arena de coral, arrecifes y agua cristalina, no nos decepcionará. Puedes ir y disfrutar de la comida local.</p>
-            <a href="../carrito.php" class="boton">Reservar</a>
+            <a href="../carrito.php" class="boton-pl">Reservar</a>
         </div>
     </section>
 <!--=======================================================================================-->
@@ -49,15 +49,15 @@ session_start();
                 <div class="cont-par">
                     <div class="parr2">
                         <div class="imge"><img src="../img/playaloscobanos/placob_1.jpg" alt=""></div>
-                        <p class="text-info">Al tratarse de una zona turística bastante conocida, hay carreteras que te conducen hasta lugar, bien sea en bus público o en auto particular. Aunque, si decides ir en bus, tendrás que hacer varias paradas y cambiar de ruta, ya que no hay una que llegue a la playa directamente. Las características de esta bonita playa saltan a la vista apenas se ve, sus arenas amarillentas son una mezcla de residuos volcánicos y de arrecifes coralinos que ha arrastrado la corriente hasta la orilla.</p>
+                        <p class="text-info-pl">Al tratarse de una zona turística bastante conocida, hay carreteras que te conducen hasta lugar, bien sea en bus público o en auto particular. Aunque, si decides ir en bus, tendrás que hacer varias paradas y cambiar de ruta, ya que no hay una que llegue a la playa directamente. Las características de esta bonita playa saltan a la vista apenas se ve, sus arenas amarillentas son una mezcla de residuos volcánicos y de arrecifes coralinos que ha arrastrado la corriente hasta la orilla.</p>
                     </div>
                     <div class="parr2">
                         <div class="imge"><img src="../img/playaloscobanos/placob_4.jpg" alt=""></div>
-                        <p class="text-info">En ciertas zonas de su costa hay algunas formaciones rocosas naturales que evitan que las olas rompan por completo. Mientras que hay algunas rocas más adentro de la orilla, a unos 800 metros, en las que se producen olas de hasta 3 metros y medio de altura en los días de marejada, y que van perdiendo fuerza conforme avanzan mar adentro. Para ver este espectáculo se puede tomar una lancha, contratando alguno de los lugareños que prestan ese servicio.</p>
+                        <p class="text-info-pl">En ciertas zonas de su costa hay algunas formaciones rocosas naturales que evitan que las olas rompan por completo. Mientras que hay algunas rocas más adentro de la orilla, a unos 800 metros, en las que se producen olas de hasta 3 metros y medio de altura en los días de marejada, y que van perdiendo fuerza conforme avanzan mar adentro. Para ver este espectáculo se puede tomar una lancha, contratando alguno de los lugareños que prestan ese servicio.</p>
                     </div>
                     <div class="parr2">
                         <div class="imge"><img src="../img/playaloscobanos/placob_3.jpg" alt=""></div>
-                        <p class="text-info">El litoral de Playa Los Cóbanos cuenta con una extensión de 264 km2 que abarca desde la orilla hasta mar adentro, cubriendo toda la zona de corales. Y es que en el año 2008 se declaró zona protegida por su biodiversidad. En efecto, la policía local patrulla regularmente la zona para mantener el orden y garantizar la estadía de los turistas, al igual que la protección de la playa y sus especies.</p>
+                        <p class="text-info-pl">El litoral de Playa Los Cóbanos cuenta con una extensión de 264 km2 que abarca desde la orilla hasta mar adentro, cubriendo toda la zona de corales. Y es que en el año 2008 se declaró zona protegida por su biodiversidad. En efecto, la policía local patrulla regularmente la zona para mantener el orden y garantizar la estadía de los turistas, al igual que la protección de la playa y sus especies.</p>
                     </div>
                 </div>
                 <div class="cont-mapa">
@@ -75,14 +75,14 @@ session_start();
                 <!--==========-->
                 <div class="cards-list">
   
-                    <div class="card 1">
+                    <div class="cardp 1">
                       <div class="card_image"> <img src="../img/playaloscobanos/tarjeta_1.jpg" /> </div>
                       <div class="card_title title-white">
                         <p>PLAYA SALINITAS</p>
                       </div>
                     </div>
                     
-                      <div class="card 2">
+                      <div class="cardp 2">
                       <div class="card_image">
                         <img src="../img/playaloscobanos/tarjeta_2.jpg"/>
                         </div>
@@ -91,7 +91,7 @@ session_start();
                       </div>
                     </div>
                     
-                    <div class="card 3">
+                    <div class="cardp 3">
                       <div class="card_image">
                         <img src="../img/playaloscobanos/tarjeta_4.jpg" />
                       </div>
@@ -108,14 +108,14 @@ session_start();
                     </div>
                     <div class="cards-list">
   
-                        <div class="card 1">
+                        <div class="cardp 1">
                           <div class="card_image"> <img src="../img/playaloscobanos/tarjeta_5.jpg" /> </div>
                           <div class="card_title title-white">
-                            <p>Playa Los Cóbanos es ideal para práctica del snorkeling y el buceo.</p>
+                            <p>Playa Los Cóbanos es ideal para hacer snorkeling y el buceo.</p>
                           </div>
                         </div>
                         
-                          <div class="card 2">
+                          <div class="cardp 2">
                           <div class="card_image">
                             <img src="../img/playaloscobanos/tarjeta_6.jpg"/>
                             </div>
@@ -124,9 +124,9 @@ session_start();
                           </div>
                         </div>
                         
-                        <div class="card 3">
+                        <div class="cardp 3">
                           <div class="card_image">
-                            <img src="../img/playaloscobanos/tarjeta_7.webp" />
+                            <img src="../img/playaloscobanos/tarjeta_9.jpg"/>
                           </div>
                           <div class="card_title title-white">
                             <p>Ir de pesca</p>
@@ -157,7 +157,7 @@ session_start();
                 </nav>
             </div>
             <div class="btnR">
-                <a href="../carrito.php" class="boton">Reservar</a>
+                <a href="../carrito.php" class="boton-pl boton">Reservar</a>
             </div>
         </div>
         <div class="cont-pre-1">

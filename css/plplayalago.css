@@ -1,6 +1,5 @@
 /*=========================================================== BANNER ===================================================================*/
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -17,7 +16,7 @@ body {
 .banner {
     max-width: 800px;
     text-align: center;
-    color: #fff;
+    color: #0152b0;
 }
 
 .banner h1 {
@@ -30,20 +29,32 @@ body {
     margin-top: 10px;
 }
 
-.boton {
+.banner .boton-pl {
     display: inline-block;
     margin-top: 150px;
     padding: 18px 80px;
     background-color: #00bfff;
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
-.boton:hover {
+.banner .boton-pl:hover, .btnR .boton:hover {
     background-color: #078a78;
+    border: #b3b3b3 solid;
+    opacity: 65%;
+}
+
+.btnR .boton {
+    background-color: #00bfff;
+    margin-top: 100px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 /*========================================================== FIN BANNER ================================================================*/
@@ -86,9 +97,12 @@ body {
     display: flex;
 }
 
-.text-info{
-    font-size: 19px;
+.text-info-pl{
+    /* font-size: 19px;
     margin: 25px;
+    text-align: justify; */
+    font-size: 17px;
+    margin: 15px;
     text-align: justify;
 }
 
@@ -126,7 +140,7 @@ body {
   flex-wrap: wrap;
 }
 
-.card {
+.cardp {
   margin: 30px auto;
   width: 300px;
   height: 300px;
@@ -136,20 +150,20 @@ box-shadow: 5px 5px 30px 7px rgba(255, 254, 254, 0.25), -5px -5px 30px 7px rgba(
   transition: 0.4s;
 }
 
-.card .card_image {
+.cardp .card_image {
   width: inherit;
   height: inherit;
   border-radius: 40px;
 }
 
-.card .card_image img {
+.cardp .card_image img {
   width: inherit;
   height: inherit;
   border-radius: 40px;
   object-fit: cover;
 }
 
-.card .card_title {
+.cardp .card_title {
   text-align: center;
   border-radius: 0px 0px 40px 40px;
   font-family: sans-serif;
@@ -159,7 +173,7 @@ box-shadow: 5px 5px 30px 7px rgba(255, 254, 254, 0.25), -5px -5px 30px 7px rgba(
   height: 40px;
 }
 
-.card:hover {
+.cardp:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
     -5px -5px 30px 15px rgba(0,0,0,0.22);
@@ -262,15 +276,15 @@ nav ul li {
   min-height: 280px;
   height: auto;
   border-radius: 10px;
-  color: #fff;
+  color: #e6e6e6;
   font-size: 1.5rem;
 }
 
 .back{
-    background: #cedce7;
-    background: -webkit-linear-gradient(45deg,  #cedce7 0%,#788a07 100%);
-    background: -o-linear-gradient(45deg,  #cedce7 0%,#788a07 100%);
-    background: linear-gradient(45deg,  #cedce7 0%,#788a07 100%);
+    background: -webkit-linear-gradient(45deg,  #ffffff 0%,#c3c4bc 100%);
+    background: -o-linear-gradient(45deg,  #ffffff 0%,#c3c4bc 100%);
+    background: linear-gradient(45deg,  #ffffff 0%,#c3c4bc 100%);
+    color: #000;
   }
 
   .front:after{
