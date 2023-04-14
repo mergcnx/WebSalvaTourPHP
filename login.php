@@ -6,12 +6,12 @@ if (isset($_POST['submit'])) {
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $pass = md5($_POST['password']);
 
-    $selec = "SELECT * FROM usuario WHERE user_name = '$username' && password = '$pass'";
+    $selec = "SELECT * FROM `usuario` WHERE user_name = '$username' && password = '$pass'";
     $result = mysqli_query($conn, $selec);
 
     if (mysqli_num_rows($result) > 0) {
         $_SESSION['username'] = $username;
-        header('location:reserva.php');
+        header('location:carrito.php');
     } else {
         $error[] = "Incorrect password or username";
         echo $error[0];

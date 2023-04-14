@@ -1,9 +1,14 @@
 <?php
+@include 'config.php';
 
 session_start();
 
 require_once './php/CreateDb.php';
 require_once './php/component.php';
+
+if (!isset($_SESSION['username'])) {
+    header('location:login.php');
+}
 
 // create instance of Createdb class
 // $database = new CreateDb("Productdb", "Producttb");
