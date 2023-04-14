@@ -125,6 +125,7 @@ body {
 }
 .cont-r-p{
     display: flex;
+    margin-top: 3%;
 }
 
 .title-r{
@@ -167,10 +168,14 @@ body {
     position: relative;
     color: white;
     font-size: 20px;
-    text-align: justify;
-    margin: 90px;
+    text-align: center;
+    margin: 20px;
+    align-content: space-between;
     border-radius: 15px;
-    top: -100px;
+}
+
+.img-t p {
+  text-align: justify;
 }
 /*========================================================= FIN SECTION Testimonio ===========================================================*/
 
@@ -448,14 +453,6 @@ nav ul li {
     text-align: center;
   }
 
-
-  /* position: relative;  */
-    /* color: white; */
-    /* font-size: 20px; */
-    /* text-align: justify; */
-    /* margin: 90px; */
-    /* border-radius: 15px; */
-    /* top: -100px; */
 }
 
 /*========================================================= FIN SECTION RESERVAR ==========================================================*/
