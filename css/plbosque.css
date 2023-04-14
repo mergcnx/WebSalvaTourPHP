@@ -30,7 +30,7 @@ body {
     margin-top: 10px;
 }
 
-.banner .boton-pl, .btnR .boton {
+.banner .boton-pl {
     display: inline-block;
     margin-top: 150px;
     padding: 18px 80px;
@@ -42,10 +42,19 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.banner .boton-pl:hover {
+.banner .boton-pl:hover, .btnR .boton:hover {
     background-color: #ffc000;
 }
 
+.btnR .boton {
+    background-color: #788a07;
+    margin-top: 100px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
 
 
 /*========================================================== FIN BANNER ================================================================*/
@@ -57,7 +66,7 @@ body {
 /*======================================================================================================================================*/
 
 /*========================================================== Parte de Section ==========================================================*/
-.title{
+.title {
     color: #788a07;
     font-size: 2cm;
     text-align: center;
@@ -101,6 +110,7 @@ body {
 }
 
 .cont-mapa iframe{
+    width: 800px;
     height: 100%;
     border-radius: 15px;
 }
@@ -109,7 +119,7 @@ body {
 /*========================================================= SECTION Testimonio ===============================================================*/
 .conteiner-B{
     background-color: black;
-    height: 125vh;
+    height: 100%;
     margin: 0;
     padding-top: 55px;
 }
@@ -201,6 +211,7 @@ nav ul li {
   }
   .cont-pre{
     display: flex;
+    height: 150px;
   }
 
   .menu-pl{
@@ -361,22 +372,90 @@ nav ul li {
     margin: 0 auto;
     bottom: -.75rem;
 }
-@media screen and (max-width: 64rem){
-    .col{
-      width: calc(33.333333% - 2rem);
-    }
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+
+  .text-intro {
+    font-size: 1.5em;
+  }
+
+  .subtitle {
+    font-weight: 700;
+  }
+
+  .articulos, .cont-art, .parr2 {
+    display: block;
+  }
+
+  .cont-mapa iframe{
+    width: 100%;
+    height: 300px;
+  }
+
+  .conteiner-B {
+    height: 100%;
+  }
+
+  .cont-r-p, .testi {
+    display: block;
+  }
+
+  .title-r {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  .cont-pre {
+    display: block;
+  }
+
+  .cont-pre-1 {
+    display: block;
+    margin-top: 300px;
   }
   
-  @media screen and (max-width: 48rem){
-    .col{
-      width: calc(50% - 2rem);
-    }
+  .col {
+    width: 100%;
   }
-  
-  @media screen and (max-width: 32rem){
-    .col{
-      width: 100%;
-      margin: 0 0 2rem 0;
-    }
+
+  .btnR {
+    position: static;
   }
+
+  .img-t {
+    position: static;
+    margin: auto;    
+    width: 100%;
+    text-align: center;
+  }
+
+  .img-t p {
+    margin: 30px;
+    text-align: justify;
+  }
+
+  hr {
+    border: none; height: 10px; /* Set the hr color */ color: #333; /* old IE */ background-color: #333; /* Modern Browsers */
+
+  }
+
+  .title-pr, .title-pr p {
+    text-align: center;
+  }
+
+
+  /* position: relative;  */
+    /* color: white; */
+    /* font-size: 20px; */
+    /* text-align: justify; */
+    /* margin: 90px; */
+    /* border-radius: 15px; */
+    /* top: -100px; */
+}
+
 /*========================================================= FIN SECTION RESERVAR ==========================================================*/

@@ -67,7 +67,7 @@ session_start();
           </div>
         </div>
         <div class="cont-mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247947.76910756112!2d-89.95030412307628!3d13.82799373077939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62a13501443f5f%3A0x21f260e3d4906f2!2sParque%20Nacional%20El%20Imposible!5e0!3m2!1ses!2ssv!4v1681316901350!5m2!1ses!2ssv" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247947.76910756112!2d-89.95030412307628!3d13.82799373077939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62a13501443f5f%3A0x21f260e3d4906f2!2sParque%20Nacional%20El%20Imposible!5e0!3m2!1ses!2ssv!4v1681316901350!5m2!1ses!2ssv" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </article>
@@ -87,12 +87,14 @@ session_start();
             <img src="../img/bosqueimposible/testimonio/team-1.jpg" alt="">
             <p>Si salis temprano de San Salvador, se puede caminar por algunos senderos en el día y regresas el mismo día. <br> Podes llevar comida, en las zonas de campamento hasta hay alguna parrilla para cocinar.</p>
           </div>
+          <hr>
           <div class="img-t">
             <img src="../img/bosqueimposible/testimonio/team-2.jpg" alt="">
             <p>En la entrada del parque, donde hay un pequeño museo, se puede encontrar una tienda. <br> No está de más que lleves tus propios insumos. Disfruta de tu viaje al Imposible.</p>
           </div>
 
         </div>
+        <hr>
         <div class="testi">
           <!-- <img class="img-r" src="../img/bosqueimposible/b_impo10.jpg" alt="">
                         <div class="text-r">Las mejores quebradas y cascadas</div> -->
@@ -100,12 +102,14 @@ session_start();
             <img src="../img/bosqueimposible/testimonio/team-3.jpg" alt="">
             <p>Te debo la ruta desde ahuachapan pero el parque esta en la calle del "Kilo 5" <br> buscando metalio y para ingresar solo debes pagar la entrada (son $3.00 creo)</p>
           </div>
+          <hr>
           <div class="img-t">
             <img src="../img/bosqueimposible/testimonio/testimonial-1.jpg" alt="">
             <p>Sí, es una área natural protegida y pertenece al área de conservación El Imposible – Barra de Santiago. <br> Es el Parque Nacional con el área más extensa y, probablemente con mayor biodiversidad a nivel nacional.</p>
           </div>
 
         </div>
+        <hr>
       </div>
       <div class="cont-r2">
         <div class="testi">
@@ -115,6 +119,7 @@ session_start();
 
             <p>Los animales se puede observar en el parque Ya sea comunes o raros<br> En su mayoría reptiles y algunas especies de aves, <br> como garrobos tomando sol, con suerte una cotuza.</p>
           </div>
+          <hr>
           <div class="img-t">
             <img src="../img/bosqueimposible/testimonio/testimonial-2.jpg" alt="">
 
@@ -122,6 +127,7 @@ session_start();
             <p>Un bosque para aventureros, lleno de imágenes sin igual, <br> por la extensión del parque se sugiere utilizar un día completo</p>
           </div>
         </div>
+        <hr>
         <div class="testi">
           <div class="img-t">
             <img src="../img/bosqueimposible/testimonio/testimonial-3.jpg" alt="">
@@ -129,6 +135,7 @@ session_start();
 
             <p>Perfecto lugar para visitar en familia!!! <br> Debes solicitar permiso antes con el Ministerio de Medio Ambiente y Recursos Naturales, <br> Puedes quedarte acampando o rentando una cabaña cuando solicites permiso.</p>
           </div>
+          <hr>
           <div class="img-t">
             <img src="../img/bosqueimposible/testimonio/testimonial-4.jpg" alt="">
 
