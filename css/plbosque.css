@@ -15,41 +15,45 @@ body {
 }
 
 .banner {
-    max-width: 800px;
+    max-width: 100%;
     text-align: center;
     color: #fff;
 }
 
 .banner h1 {
-    font-size: 65px;
+    font-size: 5em;
+    font-weight: 900;
     margin: 0;
 }
 
 .banner p {
-    font-size: 25px;
+    font-size: 2em;
+    font-weight: 500;
     margin-top: 10px;
 }
 
 .banner .boton-pl {
     display: inline-block;
-    margin-top: 150px;
+    margin-top: 50px;
     padding: 18px 80px;
     background-color: #788a07;
-    color: #333;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
+    font-size: 1.5em;
     transition: background-color 0.3s ease;
 }
 
 .banner .boton-pl:hover, .btnR .boton:hover {
     background-color: #ffc000;
+    color: #495305;
 }
 
 .btnR .boton {
     background-color: #788a07;
     margin-top: 100px;
-    color: #333;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
@@ -155,7 +159,32 @@ body {
     color: #fff;
 } */
 
-.testi{
+.cont-testi {
+  display: block;
+  width: 100%;
+}
+
+.conte-e {
+  display: flex;
+}
+.img-t {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 25%;
+}
+
+.img-t img {
+  border-radius: 50%;
+  height: 250px;
+}
+
+.img-t p {
+  padding: 15px;
+  text-align: justify;
+}
+
+/* .testi{
     display: flex;
 }
 
@@ -176,7 +205,7 @@ body {
 
 .img-t p {
   text-align: justify;
-}
+} */
 /*========================================================= FIN SECTION Testimonio ===========================================================*/
 
 /*========================================================= SECTION RESERVAR ==============================================================*/
@@ -277,10 +306,11 @@ nav ul li {
 }
 
 .back{
-    background: #cedce7;
-    background: -webkit-linear-gradient(45deg,  #cedce7 0%,#788a07 100%);
-    background: -o-linear-gradient(45deg,  #cedce7 0%,#788a07 100%);
-    background: linear-gradient(45deg,  #cedce7 0%,#788a07 100%);
+    background: #df4242;
+    background: -webkit-linear-gradient(45deg,  #ffffff 0%,#c3c4bc  100%);
+    background: -o-linear-gradient(45deg,  #ffffff 0%,#c3c4bc   100%);
+    background: linear-gradient(45deg,  #ffffff 0%,#c3c4bc  100%);
+    color: #000000;
   }
 
   .front:after{
@@ -412,7 +442,7 @@ nav ul li {
   .title-r {
     text-align: center;
     margin: 0;
-    padding-bottom: 30px;
+    padding: 10px;
   }
 
   .cont-pre {
@@ -432,8 +462,11 @@ nav ul li {
     position: static;
   }
 
+  .conte-e {
+    display: block;
+  }
+
   .img-t {
-    position: static;
     margin: auto;    
     width: 100%;
     text-align: center;

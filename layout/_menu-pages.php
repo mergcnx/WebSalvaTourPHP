@@ -33,7 +33,7 @@
           <li><a href="#">Lago de Coatepeque</a></li>
           <li><a href="#">Lago de Sushitlán</a></li>
           <li><a href="#">Playa los Cóbanos</a></li>
-          <li><a href="#">Parque Nacional Montecristo</a></li>
+          <li><a href="montecristo.php">Parque Nacional Montecristo</a></li>
           <li><a href="#">Ruinas de San Andrés</a></li>
           <li><a href="#">Volcán Chaparrastique</a></li>
         </ul>
