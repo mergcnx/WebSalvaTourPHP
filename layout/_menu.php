@@ -30,7 +30,7 @@
           <li><a href="pages/bosqueImposible.php">Bosque El Imposible</a></li>
           <li><a href="#">Citalá</a></li>
           <li><a href="pages/coatepeque.php">Lago de Coatepeque</a></li>
-          <li><a href="#">Lago de Sushitlán</a></li>
+          <li><a href="pages/suchitlan.php">Lago de Suchitlán</a></li>
           <li><a href="pages/playacobano.php">Playa los Cóbanos</a></li>
           <li><a href="pages/montecristo.php">Parque Nacional Montecristo</a></li>
           <li><a href="#">Ruinas de San Andrés</a></li>
