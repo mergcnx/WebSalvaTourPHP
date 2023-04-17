@@ -13,7 +13,7 @@
 
 <header class="header-menu">
   <div class="logo">
-    <a href="#"><img src="../img/logo.png" alt="Logo"></a>
+    <a href="../index.php"><img src="../img/logo.png" alt="Logo"></a>
   </div>
 
   <div class="control-menu">

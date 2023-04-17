@@ -29,11 +29,11 @@ session_start();
         <section class="conteiner-A">
             <div class="text">
                 <a href="bosimpo" id="bosimpo"></a>
-                <h2 class="title">Citala</h2>
+                <h2 class="title">Ruinas de san andres</h2>
                 <div class="intro">
                     <div class="parr">
                         <p class="text-intro">
-                        Citalá es una población de origen indígena que pertenece al departamento de Chalatenango. Está situada a 95 Km de San Salvador y a 47 km de Chalatenango, cerca de la frontera con Honduras.<br>El municipio cubre un área de 79,36 km² y la cabecera tiene una altitud de 715 msnm.</p>
+                        En nuestro viaje por El Salvador, no podemos dejar de visitar el enigmático Sitio Arqueológico San Andrés, considerado uno de los recintos prehispánicos más grandes del país, ocupado por los mayas en su período de mayor esplendor.</p>
                     </div>
                     <div class="menu-interno">
                     </div>
