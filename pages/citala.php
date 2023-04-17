@@ -1,29 +1,25 @@
 <?php
 session_start();
 ?>
-
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destino - SalvaTour</title>
+    <title>Citala</title>
     <link rel="stylesheet" href="../css/plvcr.css">
 </head>
-
-
 <body>
 <a href="inicio" id="inicio"></a>
     <?php include '../layout/_menu-pages.php'; ?>
 
     <section class="header-plantilla" style="background-image: url(../img/volcanchaparrastique/volcha_b.jpg);">
         <div class="banner">
-            <h1>VOLCAN CHAPARRASTIQUE</h1>
+            <h1>CITALA</h1>
             <br>
             <br>
-            <p>El Volcán de San Miguel - Chaparrastique es el 3er volcán más alto de El Salvador con 2.130 msnm abarcando 13 km cuadrados de terreno y un cráter de 800 m.</p>
+            <p>Este es el municipio más al norte de El Salvador, es un lugar con mucha historia y con gente amable que hace que el lugar sea más agradable todavía.</p>
             <a href="../carrito.php" class="boton-pl">Reservar</a>
         </div>
     </section>
@@ -33,12 +29,11 @@ session_start();
         <section class="conteiner-A">
             <div class="text">
                 <a href="bosimpo" id="bosimpo"></a>
-                <h2 class="title">Volcan Chaparrastique</h2>
+                <h2 class="title">Citala</h2>
                 <div class="intro">
                     <div class="parr">
                         <p class="text-intro">
-                        ¿Sabías que el Volcán Chaparrastique es el también llamado Volcán de San Miguel? Así es y además, su nombre es de origen lenca y quiere decir “tierra del calor”. Algo que no podría ser diferente pues se trata de uno de los volcanes más activos de El Salvador.<br>Sin embargo, aunque se caracteriza por su gran actividad volcánica, es uno de los destinos turísticos más importantes del país. Esto se debe a que es el tercero más grande y su vista desde la cima es increíble
-                        </p>
+                        Citalá es una población de origen indígena que pertenece al departamento de Chalatenango. Está situada a 95 Km de San Salvador y a 47 km de Chalatenango, cerca de la frontera con Honduras.<br>El municipio cubre un área de 79,36 km² y la cabecera tiene una altitud de 715 msnm.</p>
                     </div>
                     <div class="menu-interno">
                     </div>
@@ -48,27 +43,28 @@ session_start();
         <!--==========================================================================================================================================-->
         <article class="articulos">
             <a href="actividad" id="actividad"></a>
-            <h2 class="subtitle">Actividades que podemos realizar en el Volcan chaparrastique</h2>
+            <h2 class="subtitle">Historia</h2>
             <div class="cont-art">
                 <div class="cont-par">
                     <div class="parr2">
                         <div class="imge"><img src="../img/volcanchaparrastique/volcha_1.jpg" alt=""></div>
                         <p class="text-info-pl">
-                        El Volcán de Chaparrastique es uno de los destinos preferidos de aquellos que aman la aventura y adoran escalar altas cumbres. Por lo que el ascenso es un reto para los más valientes, considerando que deben tener gran condición física. Por lo tanto, representa un ascenso difícil con un empinado de 45° en el que además, se podrá apreciar un cambio de temperatura importante. Sin embargo, para los que no poseen las condiciones que requieren esta aventura, pueden realizar un poco de senderismo en los alrededores.
+                        Fue un territorio habitado desde tiempos remotos por poblaciones indígenas, se cree que fue fundado por los maya-chortis y toltecas, incluso antes del siglo 10. En el siglo 18 se le conocía como «San Francisco Citalá» y formaba parte del partido de Tejutla.
+                        En 1807 su principal cosecha era la de azúcar. Se cree que su título de villa que posee hasta la actualidad, fue otorgado unos años antes de 1892. En 1986 Se construye el puente sobre el río Lempa.
                         </p>
                     </div>
                     <div class="parr2">
                         <div class="imge"><img src="../img/volcanchaparrastique/volcha_2.jpg" alt=""></div>
                         <p class="text-info-pl">
-                        De este modo, podrás disfrutar también del paisaje, grandes vistas y conocer toda la biodiversidad del lugar. Sin importar el tipo de recorrido que deseas realizar, es importante que sepas que el mismo inicia en las plantaciones de café de Placitas. Por lo que es un camino bastante extenso hasta poder ver las laderas del volcán. El tiempo de recorrido varía, si quieres hacer el ascenso y descenso esto tomará todo el día.</p>
+                        El nombre Citalá en náhuat significa «río de estrellas», posiblemente se le dio en honor al caudaloso río Lempa. Este lugar está caracterizado por ser muy tranquilo y con gente humilde que sin duda cuando llegues por ahí te tratarán muy bien y quedarás con ganas de regresar.</p>
                     </div>
                     <div class="parr2">
                         <div class="imge"><img src="../img/volcanchaparrastique/volcha_3.jpg" alt=""></div>
-                        <p class="text-info-pl">El Volcán Chaparrastique se encuentra a 11 km de la ciudad de San Miguel. Lo interesante es que constituye la única elevación en 100 m2 de una ladera que deja ver a sus espaldas, el Volcán Payacal, ya extinto. Por otra parte, se trata del 3er volcán más alto de El Salvador con 2.130 msnm abarcando 13 km2 de terreno y un cráter de 800 m aproximadamente. Adicionalmente, se encuentra dentro de las categorías de volcán activo dada a las cuantiosas erupciones que ha protagonizado en más de 300 años.</p>
+                        <p class="text-info-pl">Posee un clima bastante agradable, excelente como para relajarse, esto lo llevó a formar parte de la Ruta Fresca junto a San Ignacio y La Palma, una iniciativa reciente que busca impulsar y aumentar el turismo en el municipio. Además, por ser un lugar fronterizo existe mucho comercio, cerca de la frontera El Poy. Las fiesta principales son celebradas en honor a San Francisco de Asís, del 3 al 4 de octubre y en honor Virgen de La Concepción celebrada cada 8 de diciembre.</p>
                     </div>
                 </div>
                 <div class="cont-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d73837.0589005412!2d-88.29810459476806!3d13.43815719218473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8f7b2e97f481f6cd%3A0xffb8da74a2b270d2!2svolcan%20chaparrastique!3m2!1d13.4333333!2d-88.2666667!5e0!3m2!1ses!2ssv!4v1681500180965!5m2!1ses!2ssv" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d207979.95018877555!2d-89.35185860993336!3d14.395395306427632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scitala!5e0!3m2!1ses!2ssv!4v1681758466893!5m2!1ses!2ssv" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </article>
@@ -77,7 +73,7 @@ session_start();
     <section class="conteiner-B">
         <div class="title-r">
             <a href="expe" id="expe"></a>
-            <h1>Lugares Cercanos al volcan chaparrastique
+            <h1>Lugares Cercanos a citala
             </h1>
         </div>
         <!----------------------------------------------------------------------------------------------------------->
@@ -221,5 +217,5 @@ session_start();
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
-
 </body>
+</html>
