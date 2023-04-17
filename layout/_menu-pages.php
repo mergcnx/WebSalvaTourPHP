@@ -34,7 +34,7 @@
           <li><a href="suchitlan.php">Lago de Suchitlán</a></li>
           <li><a href="playacobano.php">Playa los Cóbanos</a></li>
           <li><a href="montecristo.php">Parque Nacional Montecristo</a></li>
-          <li><a href="#">Ruinas de San Andrés</a></li>
+          <li><a href="rsanandres.php">Ruinas de San Andrés</a></li>
           <li><a href="volcanchap.php">Volcán Chaparrastique</a></li>
         </ul>
       </li>
