@@ -19,7 +19,32 @@ if (isset($_POST['remove'])) {
         }
     }
 }
-
+if (isset($_POST['minus'])) {
+    if ($_GET['action'] == 'minus') {
+        $product_id    = $_GET['id'];
+        $item_array_id = array_column($_SESSION['cart'], "product_id");
+        if (in_array($product_id, $item_array_id)) {
+            $item_index = array_search($product_id, $item_array_id);
+            $cant       = $_SESSION['cart'][$item_index]['cant'];
+            if ($cant > 1) {
+                $_SESSION['cart'][$item_index]['cant'] -= 1;
+            }
+            header('location:cart.php');
+        }
+    }
+}
+if (isset($_POST['plus'])) {
+    if ($_GET['action'] == 'plus') {
+        $product_id    = $_GET['id'];
+        $item_array_id = array_column($_SESSION['cart'], "product_id");
+        if (in_array($product_id, $item_array_id)) {
+            $item_index = array_search($product_id, $item_array_id);
+            $cant       = $_SESSION['cart'][$item_index]['cant'];
+            $_SESSION['cart'][$item_index]['cant'] += 1;
+            // $_SESSION['cart'][$item_index][''];
+        }
+    }
+}
 ?>
 
 <!doctype html>
@@ -37,6 +62,7 @@ if (isset($_POST['remove'])) {
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/cart.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
@@ -55,17 +81,18 @@ if (isset($_POST['remove'])) {
                     <hr>
 
                     <?php
-
                     $total = 0;
                     if (isset($_SESSION['cart'])) {
                         $product_id = array_column($_SESSION['cart'], 'product_id');
                         $result = $db->getData();
                         if ($result != null) {
                             while ($row = mysqli_fetch_assoc($result)) {
+                                $item_index = array_search($row['id'], $product_id);
+                                $cant       = $_SESSION['cart'][$item_index]['cant'];
                                 foreach ($product_id as $id) {
                                     if ($row['id'] == $id) {
-                                        cartElement($row['product_image'], $row['product_name'], $row['product_price'], $row['id']);
-                                        $total = $total + (int) $row['product_price'];
+                                        cartElement($row['product_image'], $row['product_name'], $row['product_price'], $row['id'], $cant);
+                                        $total = $total + (int) $row['product_price'] * (int)$cant;
                                     }
                                 }
                             }
