@@ -20,7 +20,7 @@ function component($productname, $productprice, $productimg, $productdate, $prod
                                 <i class=\"far fa-star\"></i>
                             </h6>
                             <p class=\"card-text\">
-                                Some quick example text to build on the card.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                             <p class=\"card-text\">
                                 $productdate
@@ -29,7 +29,7 @@ function component($productname, $productprice, $productimg, $productdate, $prod
                                 <span class=\"price\">$$productprice</span>
                             </h5>
 
-                            <button type=\"submit\" class=\"btn btn-warning my-3\" name=\"add\">Add to Cart <i class=\"fas fa-shopping-cart\"></i></button>
+                            <button type=\"submit\" class=\"btn btn-warning my-3\" name=\"add\">Agregar <i class=\"fas fa-shopping-cart\"></i></button>
                              <input type='hidden' name='product_id' value='$productid'>
                         </div>
                     </div>
@@ -53,8 +53,8 @@ function cartElement($productimg, $productname, $productprice, $productid, $quan
                         <h5 class=\"pt-2\">$productname</h5>
                         <small class=\"text-secondary\">Seller: dailytuition</small>
                         <h5 class=\"pt-2\">$$productprice</h5>
-                        <button type=\"submit\" class=\"btn btn-warning\">Save for Later</button>
-                        <button type=\"submit\" class=\"btn btn-danger mx-2\" name=\"remove\">Remove</button>
+                        <button type=\"submit\" class=\"btn btn-warning\">Seguir comprando</button>
+                        <button type=\"submit\" class=\"btn btn-danger mx-2\" name=\"remove\">Remover</button>
                     </form>
                 </div>   
                 <div class=\"col-md-3 py-5 plusminus\">

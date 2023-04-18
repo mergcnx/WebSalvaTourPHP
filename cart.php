@@ -1,4 +1,5 @@
 <?php
+$baseUrl = 'http://localhost/WebSalvaTourPHP/receptor.php';
 
 session_start();
 
@@ -77,25 +78,30 @@ if (isset($_POST['plus'])) {
         <div class="row px-5 mt-4">
             <div class="col-md-7">
                 <div class="shopping-cart">
-                    <h2>My Cart</h2>
+                    <h2>Mi carrito</h2>
                     <hr>
 
                     <?php
                     $total = 0;
                     if (isset($_SESSION['cart'])) {
-                        $product_id = array_column($_SESSION['cart'], 'product_id');
-                        $result = $db->getData();
-                        if ($result != null) {
-                            while ($row = mysqli_fetch_assoc($result)) {
-                                $item_index = array_search($row['id'], $product_id);
-                                $cant       = $_SESSION['cart'][$item_index]['cant'];
-                                foreach ($product_id as $id) {
-                                    if ($row['id'] == $id) {
-                                        cartElement($row['product_image'], $row['product_name'], $row['product_price'], $row['id'], $cant);
-                                        $total = $total + (int) $row['product_price'] * (int)$cant;
+                        $count = count($_SESSION['cart']);
+                        if ($count > 0) {
+                            $product_id = array_column($_SESSION['cart'], 'product_id');
+                            $result = $db->getData();
+                            if ($result != null) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    $item_index = array_search($row['id'], $product_id);
+                                    $cant = $_SESSION['cart'][$item_index]['cant'];
+                                    foreach ($product_id as $id) {
+                                        if ($row['id'] == $id) {
+                                            cartElement($row['product_image'], $row['product_name'], $row['product_price'], $row['id'], $cant);
+                                            $total = $total + (int) $row['product_price'] * (int)$cant;
+                                        }
                                     }
                                 }
                             }
+                        } else {
+                            echo "<h5>Cart is Empty</h5>";
                         }
                     } else {
                         echo "<h5>Cart is Empty</h5>";
@@ -106,33 +112,64 @@ if (isset($_POST['plus'])) {
                 </div>
             </div>
             <div class="col-md-4 offset-md-1 border rounded mt-5 bg-white h-25">
-
                 <div class="pt-4">
-                    <h2>PRICE DETAILS</h2>
-                    <hr>
-                    <div class="row price-details">
-                        <div class="col-md-6">
-                            <?php
-                            if (isset($_SESSION['cart'])) {
-                                $count = count($_SESSION['cart']);
-                                echo "<h6>Price ($count items)</h6>";
-                            } else {
-                                echo "<h6>Price (0 items)</h6>";
-                            }
-                            ?>
-                            <h6>Delivery Charges</h6>
-                            <hr>
-                            <h6>Amount Payable</h6>
+                    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" id="form_pay">
+                        <h2>DETALLES</h2>
+                        <hr>
+                        <div class="row price-details">
+                            <div class="col-md-6">
+                                <?php
+                                if (isset($_SESSION['cart'])) {
+                                    $count = count(
+                                        $_SESSION['cart']
+                                    );
+                                    echo "<h6>Items</h6>";
+                                    echo "<h6>Cantidad</h6>";
+                                    echo "<h6>Precio ($count items)</h6>";
+                                } else {
+                                    echo "<h6>Precio (0 items)</h6>";
+                                }
+                                ?>
+                                <h6>Cargos</h6>
+                                <hr>
+                                <h6>Cantidad a pagar</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="business" value="vendedor@business.example.com">
+                                <input type="hidden" name="cmd" value="_xclick">
+                                <h6>
+                                    <?php
+                                    echo "<input type=\"text\" name=\"item_name\" id=\"\" value=\"Items\" readonly style=\"border:none\" required=\"\">";
+                                    ?>
+                                </h6>
+                                <h6>
+                                    <?php
+                                    echo "<input type=\"text\" name=\"quantity\" id=\"\" value=\"$count\" readonly style=\"border:none\" required=\"\">";
+                                    ?>
+                                </h6>
+                                <h6>$<?php
+
+                                        echo "<input type=\"text\" name=\"amount\" id=\"\" value=\"$total\" readonly style=\"border:none\" required=\"\">";
+                                        ?></h6>
+                                <h6 class="text-success">FREE</h6>
+                                <hr>
+                                <h6>$<?php
+                                        echo $total;
+                                        ?></h6>
+                            </div>
+                            <input type="hidden" name="item_number" value="1">
+                            <!-- <input type="hidden" name="invoice" value="0012"> -->
+
+                            <input type="hidden" name="lc" value="es_ES">
+                            <input type="hidden" name="no_shipping" value="1">
+                            <input type="hidden" name="image_url" value="https://picsum.photos/150/150">
+                            <input type="hidden" name="return" value="<?= $baseUrl ?>/receptor.php">
+                            <input type="hidden" name="cancel_return" value="<?= $baseUrl ?>/pago_cancelado.php">
                         </div>
-                        <div class="col-md-6">
-                            <h6>$<?php echo $total; ?></h6>
-                            <h6 class="text-success">FREE</h6>
-                            <hr>
-                            <h6>$<?php
-                                    echo $total;
-                                    ?></h6>
+                        <div class="btn-container">
+                            <button type="submit" class="btn-paypal">Pagar ahora con Paypal!</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
             </div>
