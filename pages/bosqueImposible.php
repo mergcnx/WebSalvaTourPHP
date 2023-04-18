@@ -15,7 +15,7 @@ session_start();
 
 
 <body>
-
+<a href="inicio" id="inicio"></a>
   <?php include '../layout/_menu-pages.php'; ?>
 
   <section class="header-plantilla" style="background-image: url(../img/bosqueimposible/b_impo6.jpg);">
