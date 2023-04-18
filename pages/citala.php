@@ -21,7 +21,7 @@ session_start();
             <br>
             <div class="subtitle-lago" style="background: white;opacity: 0.6; width:40%; margin:auto auto;">
             <p style="color: black; text-align: center;">
-                Este es el municipio más al norte de El Salvador, es un lugar con mucha historia y con gente amable que hace que el lugar sea más agradable todavía.
+                Este es el municipio más al norte de El Salvador, es un lugar con mucha historia.
             </p>
             </div>
             <a href="../carrito.php" class="boton-pl">Reservar</a>

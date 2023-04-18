@@ -21,7 +21,7 @@ session_start();
             <br>
             <div class="subtitle-lago" style="background: white;opacity: 0.6; width:60%; margin:auto auto;">
             <p style="color: black; text-align: center;">
-            El Sitio Arqueológico San Andrés nos sumerge en la historia más profunda de la vida que tuvieron los mayas en este país. Este centro monumental es un “Patrimonio Cultural” protegido por la Convención de La Haya de 1954.
+            El Sitio Arqueológico San Andrés nos sumerge en la historia más profunda de la vida que tuvieron los mayas en este país.
             </p>
             </div>
             
