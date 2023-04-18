@@ -19,14 +19,18 @@ if (isset($_POST['add'])) {
     if (isset($_SESSION['cart'])) {
 
         $item_array_id = array_column($_SESSION['cart'], "product_id");
+        $product_id    = $_POST['product_id'];
 
         if (in_array($_POST['product_id'], $item_array_id)) {
+            $item_index = array_search($product_id, $item_array_id);
+            $_SESSION['cart'][$item_index]['cant'] += 1;
             echo "<script>alert('Product is already added in the cart..!')</script>";
             echo "<script>window.location = 'carrito.php'</script>";
         } else {
             $count      = count($_SESSION['cart']);
             $item_array = array(
                 'product_id' => $_POST['product_id'],
+                'cant' => 1
             );
 
             $_SESSION['cart'][$count] = $item_array;
@@ -35,6 +39,7 @@ if (isset($_POST['add'])) {
 
         $item_array = array(
             'product_id' => $_POST['product_id'],
+            'cant' => 1
         );
 
         // Create new session variable
@@ -76,7 +81,7 @@ if (isset($_POST['add'])) {
             $result = $database->getData();
             if ($result != null) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                    component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
+                    component($row['product_name'], $row['product_price'], $row['product_image'], $row['product_date'], $row['id']);
                 }
             }
 
