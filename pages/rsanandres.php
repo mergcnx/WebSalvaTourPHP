@@ -7,19 +7,24 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruinas de san andres</title>
+    <title>Ruinas de San Andres</title>
     <link rel="stylesheet" href="../css/plvcr.css">
 </head>
 <body>
 <a href="inicio" id="inicio"></a>
     <?php include '../layout/_menu-pages.php'; ?>
 
-    <section class="header-plantilla" style="background-image: url(../img/volcanchaparrastique/volcha_b.jpg);">
+    <section class="header-plantilla" style="background-image: url(../img/rsan_andres/inicio_rsan.jpg);">
         <div class="banner">
             <h1>RUINAS DE SAN ANDRES</h1>
             <br>
             <br>
-            <p>El Sitio Arqueológico San Andrés nos sumerge en la historia más profunda de la vida que tuvieron los mayas en este país. Este centro monumental es un “Patrimonio Cultural” protegido por la Convención de La Haya de 1954.</p>
+            <div class="subtitle-lago" style="background: white;opacity: 0.6; width:60%; margin:auto auto;">
+            <p style="color: black; text-align: center;">
+            El Sitio Arqueológico San Andrés nos sumerge en la historia más profunda de la vida que tuvieron los mayas en este país. Este centro monumental es un “Patrimonio Cultural” protegido por la Convención de La Haya de 1954.
+            </p>
+            </div>
+            
             <a href="../carrito.php" class="boton-pl">Reservar</a>
         </div>
     </section>
@@ -47,24 +52,22 @@ session_start();
             <div class="cont-art">
                 <div class="cont-par">
                     <div class="parr2">
-                        <div class="imge"><img src="../img/volcanchaparrastique/volcha_1.jpg" alt=""></div>
+                        <div class="imge"><img src="../img/rsan_andres/rsan1.jpg" alt=""></div>
                         <p class="text-info-pl">
-                        Fue un territorio habitado desde tiempos remotos por poblaciones indígenas, se cree que fue fundado por los maya-chortis y toltecas, incluso antes del siglo 10. En el siglo 18 se le conocía como «San Francisco Citalá» y formaba parte del partido de Tejutla.
-                        En 1807 su principal cosecha era la de azúcar. Se cree que su título de villa que posee hasta la actualidad, fue otorgado unos años antes de 1892. En 1986 Se construye el puente sobre el río Lempa.
-                        </p>
+                        San Andrés es un sitio arqueológico que se encuentra en el valle de Zapotitán, a solo cinco kilómetros de Joya de Cerén, en el departamento de La Libertad.
+
+El sitio comprende una acrópolis, que es un espacio arquitectónico en el que se realizaban actividades restringidas a un grupo especial de personas, posiblemente dirigidas por la élite gobernante.</p>
                     </div>
                     <div class="parr2">
-                        <div class="imge"><img src="../img/volcanchaparrastique/volcha_2.jpg" alt=""></div>
+                        <div class="imge"><img src="../img/rsan_andres/rsan2.jpg" alt=""></div>
                         <p class="text-info-pl">
-                        El nombre Citalá en náhuat significa «río de estrellas», posiblemente se le dio en honor al caudaloso río Lempa. Este lugar está caracterizado por ser muy tranquilo y con gente humilde que sin duda cuando llegues por ahí te tratarán muy bien y quedarás con ganas de regresar.</p>
-                    </div>
+                        La Acrópolis se construye, elevando el nivel de suelo entre las estructuras 1, 2, 3 y 4 mediante el empleo de ladrillos de adobe en la época del apogeo de San Andrés en el Clásico Tardío. También hay una gran plaza al norte de la Acrópolis donde se ubican otras estructuras, incluyendo una en forma de campana, siendo la estructura más grande que posee San Andrés.</div>
                     <div class="parr2">
-                        <div class="imge"><img src="../img/volcanchaparrastique/volcha_3.jpg" alt=""></div>
-                        <p class="text-info-pl">Posee un clima bastante agradable, excelente como para relajarse, esto lo llevó a formar parte de la Ruta Fresca junto a San Ignacio y La Palma, una iniciativa reciente que busca impulsar y aumentar el turismo en el municipio. Además, por ser un lugar fronterizo existe mucho comercio, cerca de la frontera El Poy. Las fiesta principales son celebradas en honor a San Francisco de Asís, del 3 al 4 de octubre y en honor Virgen de La Concepción celebrada cada 8 de diciembre.</p>
-                    </div>
+                        <div class="imge"><img src="../img/rsan_andres/rsan3.jpg" alt=""></div>
+                        <p class="text-info-pl">En los alrededores, se estima que vivía la gente común, presumiendo que el Valle de Zapotitán estuvo densamente poblado en la época prehispánica. En la mayoría de edificios predomina la construcción con ladrillos de adobe, aunque  se ha documentado en trabajos recientes el uso de piedra y bloques de toba cortada. La Estructura 7 es la única que no continúa con la tradición de las demás estructuras del sitio.</div>
                 </div>
                 <div class="cont-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d207979.95018877555!2d-89.35185860993336!3d14.395395306427632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scitala!5e0!3m2!1ses!2ssv!4v1681758466893!5m2!1ses!2ssv" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3874.656181715481!2d-89.391007435169!3d13.799588190316552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sruinas%20de%20san%20andres!5e0!3m2!1ses-419!2ssv!4v1681837790788!5m2!1ses-419!2ssv" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </article>
@@ -80,60 +83,60 @@ session_start();
         <div class="cards-list">
 
       <div class="cardp 1">
-        <div class="card_image"> <img src="../img/volcanchaparrastique/volcha_4.jpg" /> </div>
+        <div class="card_image"> <img src="../img/rsan_andres/rsan4.jpg" /> </div>
         <div class="card_title title-white">
-          <p>PLAYA SALINITAS</p>
+          <p>PARQUE ARQUEOLOGICO JOYA DE CEREN</p>
         </div>
       </div>
 
       <div class="cardp 2">
         <div class="card_image">
-          <img src="../img/volcanchaparrastique/volcha_5.jpg" />
+          <img src="../img/rsan_andres/rsan5.jpg"/>
         </div>
         <div class="card_title title-white">
-          <p>PAYA EL FARO</p>
+          <p>PARQUE NACIONAL CERRO VERDE</p>
         </div>
       </div>
 
       <div class="cardp 3">
         <div class="card_image">
-          <img src="../img/volcanchaparrastique/volcha_6.jpg" />
+          <img src="../img/rsan_andres/rsan6.jpg"/>
         </div>
         <div class="card_title title-white">
-          <p>CLUB PLAYA LAS VERANERAS</p>
+          <p>PARQUE ARQUEOLOGICO TAZUMAL</p>
         </div>
       </div>
     </div>
     <div class="marg">
       <div class="title-r">
         <a href="expe" id="expe"></a>
-        <h1>¿Qué hacer en la playa Los Cóbanos?</h1>
+        <h1>¿Qué hacer en las Ruinas de San Andres?</h1>
       </div>
     </div>
     <div class="cards-list">
 
       <div class="cardp 1">
-        <div class="card_image"> <img src="../img/volcanchaparrastique/volcha_7.jpg" /> </div>
+        <div class="card_image"> <img src="../img/rsan_andres/rsan7.jpg"/> </div>
         <div class="card_title title-white">
-          <p>ideal para hacer snorkeling y el buceo.</p>
+          <p>Caminata planificada.</p>
         </div>
       </div>
 
       <div class="cardp 2">
         <div class="card_image">
-          <img src="../img/volcanchaparrastique/volcha_b.jpg" />
+          <img src="../img/rsan_andres/rsan8.jpg"/>
         </div>
         <div class="card_title title-white">
-          <p>Paseos en lancha</p>
+          <p>Toma de Fotos</p>
         </div>
       </div>
 
       <div class="cardp 3">
         <div class="card_image">
-          <img src="../img/volcanchaparrastique/volcha_2.jpg" />
+          <img src="../img/rsan_andres/rsan9.jpg" />
         </div>
         <div class="card_title title-white">
-          <p>Ir de pesca</p>
+          <p>Estudio Cultural</p>
         </div>
       </div>
     </div>
@@ -147,7 +150,7 @@ session_start();
         <section class="precios">
             <div class="title-pr">
                 <h1>Reserva para tener una mejor experiencia</h1>
-                <p>El clima en el Volcán Chaparrastique y San Miguel en general, es de tipo Sabana Caliente Tropical con temperaturas entre 30°C y 40°C, teniendo como referencia media al día 36°C.</p>
+                <p>San Andrés es un sitio maya prehispánico de El Salvador, cuya larga ocupación se inició alrededor del año 900 a. C. como un pueblo agrícola en el valle de Zapotitán del departamento de La Libertad. </p>
             </div>
             <div class="space"></div>
             <div class="cont-pre">
@@ -155,7 +158,7 @@ session_start();
                     <nav>
                         <ul>
                             <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#bosimpo">Volcan chaparrastique</a></li>
+                            <li><a href="#bosimpo">Ruina de San Andres</a></li>
                             <li><a href="#actividad">Actividades</a></li>
                             <li><a href="#expe">Experiencia</a></li>
                         </ul>
@@ -168,7 +171,7 @@ session_start();
             <div class="cont-pre-1">
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" style="background-image: url(../img/volcanchaparrastique/vctarjeta_1.jpg)">
+                        <div class="front" style="background-image: url(../img/rsan_andres/rsan10.webp)">
                             <div class="inner">
                                 <p>Entrada:</p>
                             </div>
@@ -182,7 +185,7 @@ session_start();
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" style="background-image: url(../img/volcanchaparrastique/vctarjeta_2.jpg)">
+                        <div class="front" style="background-image: url(../img/rsan_andres/rsan11.jpg)">
                             <div class="inner">
                                 <p>Horarios:</p>
                             </div>
@@ -196,7 +199,7 @@ session_start();
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" style="background-image: url(../img/volcanchaparrastique/vctarjeta_3.jpg)">
+                        <div class="front" style="background-image: url(../img/rsan_andres/rsan12.jpg)">
                             <div class="inner">
                                 <p>Parqueo:</p>
                             </div>
