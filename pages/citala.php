@@ -7,19 +7,23 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citala</title>
+    <title>Citalá</title>
     <link rel="stylesheet" href="../css/plvcr.css">
 </head>
 <body>
 <a href="inicio" id="inicio"></a>
     <?php include '../layout/_menu-pages.php'; ?>
 
-    <section class="header-plantilla" style="background-image: url(../img/volcanchaparrastique/volcha_b.jpg);">
+    <section class="header-plantilla" style="background-image: url(../img/citala/inicio_citala.jpg);">
         <div class="banner">
-            <h1>CITALA</h1>
+            <h1>CITAlÁ</h1>
             <br>
             <br>
-            <p>Este es el municipio más al norte de El Salvador, es un lugar con mucha historia y con gente amable que hace que el lugar sea más agradable todavía.</p>
+            <div class="subtitle-lago" style="background: white;opacity: 0.6; width:40%; margin:auto auto;">
+            <p style="color: black; text-align: center;">
+                Este es el municipio más al norte de El Salvador, es un lugar con mucha historia y con gente amable que hace que el lugar sea más agradable todavía.
+            </p>
+            </div>
             <a href="../carrito.php" class="boton-pl">Reservar</a>
         </div>
     </section>
@@ -47,19 +51,17 @@ session_start();
             <div class="cont-art">
                 <div class="cont-par">
                     <div class="parr2">
-                        <div class="imge"><img src="../img/volcanchaparrastique/volcha_1.jpg" alt=""></div>
+                        <div class="imge"><img src="../img/citala/citala1.jpg" alt=""></div>
                         <p class="text-info-pl">
-                        Fue un territorio habitado desde tiempos remotos por poblaciones indígenas, se cree que fue fundado por los maya-chortis y toltecas, incluso antes del siglo 10. En el siglo 18 se le conocía como «San Francisco Citalá» y formaba parte del partido de Tejutla.
-                        En 1807 su principal cosecha era la de azúcar. Se cree que su título de villa que posee hasta la actualidad, fue otorgado unos años antes de 1892. En 1986 Se construye el puente sobre el río Lempa.
-                        </p>
+                        Esta antiquísima población fue conocida como Huehuetlapayán, Hueytlató o Primitiva Tula. En la segunda mitad del siglo XI, fue incorporada en el área del reino de Payaquí, fundado por el anciano y venerable TopilzínAexitl y a partir de esa época se produjo un fuerte cruzamiento entre los Maya–Chortis nativos y los toltecas emigrantes. Ese cruzamiento era tal en los albores del siglo XVI, que los habitantes de Citalá no hablaban ni el chorti, ni el náhuatl, sino un dialecto: El alagüilak.
+
+Los antiguos Maya–Chortis llamaban a esa población Kujkaijá y al traducir ese nombre al náhuatl los Toltecas le llamaban Citalá. Kujkaijá significa “río de estrellas,” ya que proviene de Kujkai, Kujk’ai: Estrella, Lucero; y ja: Agua, río. Citalá significa igualmente “río de estrellas,” ya que proviene de cital: Estrella; y a, at: Agua, río.</p>
                     </div>
                     <div class="parr2">
-                        <div class="imge"><img src="../img/volcanchaparrastique/volcha_2.jpg" alt=""></div>
-                        <p class="text-info-pl">
-                        El nombre Citalá en náhuat significa «río de estrellas», posiblemente se le dio en honor al caudaloso río Lempa. Este lugar está caracterizado por ser muy tranquilo y con gente humilde que sin duda cuando llegues por ahí te tratarán muy bien y quedarás con ganas de regresar.</p>
-                    </div>
+                        <div class="imge"><img src="../img/citala/citala2.jpg" alt=""></div>
+                        <p class="text-info-pl">En el orden político, a la llegada de los españoles a estas latitudes, Citalá era pueblo feudatario del Gales o jefe supremo de Copán. La región indicada fue sometida al real dominio español por los conquistadores Hernando de Chávez y Pedro Amalín, quienes lograron asaltar la ciudad de Copán, después de prolongados combates. El rey o Gales de Copán logró huir de la masacre y fue a establecer su cuartel general en la fortificada cuidad de Citalá. Aquí presentó su última heroica resistencia a los rubios invasores de ultramar. Las guerras de la conquista mermaron considerablemente su población. </div>
                     <div class="parr2">
-                        <div class="imge"><img src="../img/volcanchaparrastique/volcha_3.jpg" alt=""></div>
+                        <div class="imge"><img src="../img/citala/citala3.jpg" alt=""></div>
                         <p class="text-info-pl">Posee un clima bastante agradable, excelente como para relajarse, esto lo llevó a formar parte de la Ruta Fresca junto a San Ignacio y La Palma, una iniciativa reciente que busca impulsar y aumentar el turismo en el municipio. Además, por ser un lugar fronterizo existe mucho comercio, cerca de la frontera El Poy. Las fiesta principales son celebradas en honor a San Francisco de Asís, del 3 al 4 de octubre y en honor Virgen de La Concepción celebrada cada 8 de diciembre.</p>
                     </div>
                 </div>
@@ -80,60 +82,60 @@ session_start();
         <div class="cards-list">
 
       <div class="cardp 1">
-        <div class="card_image"> <img src="../img/volcanchaparrastique/volcha_4.jpg" /> </div>
+        <div class="card_image"> <img src="../img/citala/citala4.jpg" /> </div>
         <div class="card_title title-white">
-          <p>PLAYA SALINITAS</p>
+          <p>CERRO EL PITAL</p>
         </div>
       </div>
 
       <div class="cardp 2">
         <div class="card_image">
-          <img src="../img/volcanchaparrastique/volcha_5.jpg" />
+          <img src="../img/citala/citala5.jpg" />
         </div>
         <div class="card_title title-white">
-          <p>PAYA EL FARO</p>
+          <p>PEÑON DE CAYAGUANCA</p>
         </div>
       </div>
 
       <div class="cardp 3">
         <div class="card_image">
-          <img src="../img/volcanchaparrastique/volcha_6.jpg" />
+          <img src="../img/citala/citala6.jpg"/>
         </div>
         <div class="card_title title-white">
-          <p>CLUB PLAYA LAS VERANERAS</p>
+          <p>RÍO LEMPA</p>
         </div>
       </div>
     </div>
     <div class="marg">
       <div class="title-r">
         <a href="expe" id="expe"></a>
-        <h1>¿Qué hacer en la playa Los Cóbanos?</h1>
+        <h1>¿Qué hacer en Citalá?</h1>
       </div>
     </div>
     <div class="cards-list">
 
       <div class="cardp 1">
-        <div class="card_image"> <img src="../img/volcanchaparrastique/volcha_7.jpg" /> </div>
+        <div class="card_image"> <img src="../img/citala/citala7.jpg"/> </div>
         <div class="card_title title-white">
-          <p>ideal para hacer snorkeling y el buceo.</p>
+          <p>Caminata familiar</p>
         </div>
       </div>
 
       <div class="cardp 2">
         <div class="card_image">
-          <img src="../img/volcanchaparrastique/volcha_b.jpg" />
+          <img src="../img/citala/citala8.jpg"/>
         </div>
         <div class="card_title title-white">
-          <p>Paseos en lancha</p>
+          <p>Toma de fotos</p>
         </div>
       </div>
 
       <div class="cardp 3">
         <div class="card_image">
-          <img src="../img/volcanchaparrastique/volcha_2.jpg" />
+          <img src="../img/citala/citala9.jpg"/>
         </div>
         <div class="card_title title-white">
-          <p>Ir de pesca</p>
+          <p>Clases Culturales</p>
         </div>
       </div>
     </div>
@@ -147,15 +149,14 @@ session_start();
         <section class="precios">
             <div class="title-pr">
                 <h1>Reserva para tener una mejor experiencia</h1>
-                <p>El clima en el Volcán Chaparrastique y San Miguel en general, es de tipo Sabana Caliente Tropical con temperaturas entre 30°C y 40°C, teniendo como referencia media al día 36°C.</p>
-            </div>
+                <p>La calidad del aire es generalmente aceptable para la mayoría de personas. Sin embargo, los grupos sensibles pueden experimentar síntomas de menores a a moderados por la exposición a largo plazo</div>
             <div class="space"></div>
             <div class="cont-pre">
                 <div class="menu-pl">
                     <nav>
                         <ul>
                             <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#bosimpo">Volcan chaparrastique</a></li>
+                            <li><a href="#bosimpo">Citalá</a></li>
                             <li><a href="#actividad">Actividades</a></li>
                             <li><a href="#expe">Experiencia</a></li>
                         </ul>
@@ -168,7 +169,7 @@ session_start();
             <div class="cont-pre-1">
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" style="background-image: url(../img/volcanchaparrastique/vctarjeta_1.jpg)">
+                        <div class="front" style="background-image: url(../img/citala/citala10.jpg)">
                             <div class="inner">
                                 <p>Entrada:</p>
                             </div>
@@ -182,7 +183,7 @@ session_start();
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" style="background-image: url(../img/volcanchaparrastique/vctarjeta_2.jpg)">
+                        <div class="front" style="background-image: url(../img/citala/citala11.jpg)">
                             <div class="inner">
                                 <p>Horarios:</p>
                             </div>
@@ -196,7 +197,7 @@ session_start();
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" style="background-image: url(../img/volcanchaparrastique/vctarjeta_3.jpg)">
+                        <div class="front" style="background-image: url(../img/citala/citala12.jpg)">
                             <div class="inner">
                                 <p>Parqueo:</p>
                             </div>
