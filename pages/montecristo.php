@@ -15,7 +15,7 @@ session_start();
 
 
 <body>
-
+<a href="inicio" id="inicio"></a>
     <?php include '../layout/_menu-pages.php'; ?>
 
     <section class="header-plantilla" style="background-image: url(../img/montecristo/b-monte1.jpg);">
