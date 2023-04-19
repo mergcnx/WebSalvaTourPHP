@@ -16,6 +16,10 @@ header {
     height: 15vh;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
+header .volini{
+    margin-top: -40px;
+    margin-left: 30px;
+}
 
 h1 {
     letter-spacing: 1.5vw;
@@ -31,6 +35,11 @@ h3 {
     font-size: 1.5em;
     text-align: center;
     
+}
+.volini h4, .regi{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 main {

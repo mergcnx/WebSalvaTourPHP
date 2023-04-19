@@ -44,6 +44,7 @@ if (isset($_POST['submit'])) {
     <header>
         <h1>SalvaTour</h1>
         <h3>Bienvenido al registro de usuarios!</h3>
+        <div class="volini"><h4> <a class="regi" href="index.php">VOLVER AL INICIO</a></h4></div>
     </header>
     <main>
         <form id="login_form" class="form_class" action="" method="post">
