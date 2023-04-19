@@ -16,9 +16,11 @@ header {
 } */
 
 .logo img {
-  height: 100px;
+  height: 150px;
 }
-
+.logo{
+  height: 150px;
+}
 .header-menu nav ul {
   list-style: none;
   margin: 0;
