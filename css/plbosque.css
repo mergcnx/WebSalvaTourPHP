@@ -467,6 +467,10 @@ nav ul li {
     display: block;
   }
 
+  .imge img {
+    width: 100%;
+  }
+
   .img-t {
     margin: auto;    
     width: 100%;

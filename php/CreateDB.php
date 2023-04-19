@@ -15,6 +15,13 @@ class CreateDb
         $servername = "localhost",
         $username = "root",
         $password = ""
+
+        #Produccion
+        /*$dbname = "id20629645_salvatour_db",
+        $tablename = "producto",
+        $servername = "localhost",
+        $username = "id20629645_root",
+        $password = "tAkE3umt2U-7I{E)"*/
     ) {
         $this->dbname     = $dbname;
         $this->tablename  = $tablename;

@@ -45,7 +45,7 @@
       if (isset($_SESSION['username'])) {
         echo "<li><a href='../carrito.php'><i class='fas fa-shopping-cart'></i></a></li>";
         echo "<li><p class='user-log'><span class='fas fa-user'></span> " . $_SESSION['username'] . "</p></li>";
-        echo "<li><a href='logout.php' class='logout'>Logout  <span class='fas fa-right-from-bracket'></span></a></li>";
+        echo "<li><a href='../logout.php' class='logout'>Logout  <span class='fas fa-right-from-bracket'></span></a></li>";
       }
       /*  Falta terminar de implementar el login*/
       ?>
